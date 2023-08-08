@@ -1,6 +1,7 @@
+import styles from "./style.module.css"
 function Footer() {
   return (
-    <div></div>
+    <div className={styles.container}></div>
   )
 }
 

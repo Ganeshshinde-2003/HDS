@@ -7,6 +7,7 @@ import RadMedia from "./pages/CaseStudies/RadMedia/RadMedia";
 import BakersStreet from "./pages/CaseStudies/BakersStreet/BakersStreet";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -15,7 +16,7 @@ function App() {
   });
 
   useEffect(() => {
-    const mouseMove = (e: any) => {
+    const mouseMove = (e) => {
       setMousePosition({
         x: e.clientX,
         y: e.clientY,
@@ -60,6 +61,7 @@ function App() {
           <Route path="/works/radmedia" element={<RadMedia />} />
           <Route path="/works/bakerstreet" element={<BakersStreet />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
