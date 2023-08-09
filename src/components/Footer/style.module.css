@@ -53,7 +53,7 @@
     .footer{
         align-items: flex-start;
         gap: 10px;
-        padding: 0 20px;
+        padding-left: 20px;
     }
     .container{
         flex-direction: column-reverse;
