@@ -8,6 +8,7 @@ import BakersStreet from "./pages/CaseStudies/BakersStreet/BakersStreet";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
+import Toot from "./pages/CaseStudies/Toot/Toot";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -61,6 +62,7 @@ function App() {
             <Route path="/works/sereneskin" element={<SereneSkin />} />
             <Route path="/works/radmedia" element={<RadMedia />} />
             <Route path="/works/bakerstreet" element={<BakersStreet />} />
+            <Route path="/works/toot" element={<Toot />} />
           </Routes>
         </AnimatePresence>
         <Footer />

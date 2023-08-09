@@ -27,6 +27,7 @@
   background-color: transparent;
   border: 2px solid black;
   border-radius: 50px;
+  transition: all 0.5s;
 }
 .navigation button:first-child {
   background-color: #2b2322;

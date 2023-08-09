@@ -99,7 +99,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Toot} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/toot">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
