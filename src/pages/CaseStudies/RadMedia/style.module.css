@@ -23,6 +23,7 @@
   }
   img {
     width: 100%;
+    border-radius: 5px;
   }
   .text,
   .images {
@@ -201,6 +202,9 @@
     }
     .imagetext{
         gap: 0;
+    }
+    .captionTopLeft{
+      font-size: 9px;
     }
   }
   

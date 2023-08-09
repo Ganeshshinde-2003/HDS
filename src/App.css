@@ -31,3 +31,9 @@ body {
   mix-blend-mode: difference;
   backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
 }
+
+@media (max-width: 500px){
+  .cursor, .cursor.text-mode {
+    display: none;
+  }
+}

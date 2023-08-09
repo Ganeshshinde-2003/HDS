@@ -6,7 +6,7 @@ import styles from "./style.module.css";
 
 function Navbar() {
 
-  const [display, setDisplay] = useState(true);
+  const [display, setDisplay] = useState(false);
 
   const toggleMenu = () => {
     setDisplay(!display);
@@ -18,7 +18,7 @@ function Navbar() {
         <div>
           <img src={Logo} alt="HDSLLP" className={styles.logo} />
         </div>
-        <div className={styles.secdev} style={{"display" : display ? "flex" : "none"}}>
+        <div className={styles.secdev} style={{"display" : display ? "none" : "flex"}}>
           <div className={styles.navigation}>
             <a href="/">Work</a>
             <a href="/">Service</a>
