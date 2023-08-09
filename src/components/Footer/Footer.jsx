@@ -17,16 +17,16 @@ function Footer() {
             <img src={Logo} alt="LOGO" className={styles.logo} />
           </a>
           <p>Follow Us On:</p>
-          <a href="/">
+          <a href="https://www.linkedin.com/company/haraaydesignstudio/">
             <FontAwesomeIcon className={styles.link} icon={faLinkedin} />
           </a>
-          <a href="/">
+          <a href="https://www.facebook.com/Hugedesign.in">
             <FontAwesomeIcon className={styles.link} icon={faFacebook} />
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/haraay_studio/">
             <FontAwesomeIcon className={styles.link} icon={faInstagram} />
           </a>
-          <a href="/">
+          <a href="https://www.behance.net/helloharaaystudio">
             <FontAwesomeIcon className={styles.link} icon={faBehance} />
           </a>
         </div>
