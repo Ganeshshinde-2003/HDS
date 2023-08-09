@@ -106,6 +106,7 @@
     }
     .image {
       flex-direction: column;
+      margin: 0 0;
       margin-bottom: 20px;
     }
     .text p {
@@ -116,7 +117,7 @@
     }
     .image img,
     .image video {
-      margin: 0 10px;
+      padding: 0 0;
       width: 100%;
       flex: 0 0 calc(100% - 10px);
       max-width: calc(100% - 10px);
