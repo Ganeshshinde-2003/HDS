@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
 import Toot from "./pages/CaseStudies/Toot/Toot";
-import Hathkari from "./pages/CaseStudies/Hathkari/Hathkari";
+import Hathkari from "./pages/CaseStudies/hathkari/Hathkari";
 import CreamForest from "./pages/CaseStudies/CreamForest/CreamForest";
 
 function App() {
