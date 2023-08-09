@@ -14,9 +14,11 @@ import img12 from "../../../assets/casestudies/bakerstreet/RENDER 2.jpg";
 import img14 from "../../../assets/casestudies/bakerstreet/Artboard 23-100.jpg";
 import img15 from "../../../assets/casestudies/bakerstreet/Artboard 1@4x-100 (1) 2.png";
 import videoFile from "../../../assets/casestudies/bakerstreet/Screen Recording 2023-07-04 at 10.48.08 AM.mov";
+import AnimatedComponent from "../../../components/AnimatedComponent";
 
 function BakersStreet() {
   return (
+    <AnimatedComponent>
     <main>
       <div className={styles.mainpart}>
         <div className={styles.headings}>
@@ -137,6 +139,7 @@ function BakersStreet() {
         </div>
       </div>
     </main>
+    </AnimatedComponent>
   );
 }
 

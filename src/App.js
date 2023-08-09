@@ -6,7 +6,7 @@ import SereneSkin from "./pages/CaseStudies/SereneScreen/SereneSkin";
 import RadMedia from "./pages/CaseStudies/RadMedia/RadMedia";
 import BakersStreet from "./pages/CaseStudies/BakersStreet/BakersStreet";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -55,12 +55,14 @@ function App() {
       <Router>
         <motion.div className="cursor" variants={variants} animate="default" />
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Works />} />
-          <Route path="/works/sereneskin" element={<SereneSkin />} />
-          <Route path="/works/radmedia" element={<RadMedia />} />
-          <Route path="/works/bakerstreet" element={<BakersStreet />} />
-        </Routes>
+        <AnimatePresence>
+          <Routes>
+            <Route path="/" element={<Works />} />
+            <Route path="/works/sereneskin" element={<SereneSkin />} />
+            <Route path="/works/radmedia" element={<RadMedia />} />
+            <Route path="/works/bakerstreet" element={<BakersStreet />} />
+          </Routes>
+        </AnimatePresence>
         <Footer />
       </Router>
     </div>

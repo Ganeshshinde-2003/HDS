@@ -12,9 +12,11 @@ import B5 from "../../../assets/casestudies/SereneSkin/bottel 1 8.png"
 import Presentation from "../../../assets/casestudies/SereneSkin/presention 1 1.png"
 import B6 from "../../../assets/casestudies/SereneSkin/bottel 15 1.png"
 import B7 from "../../../assets/casestudies/SereneSkin/bottel 17 (1) 1.png"
+import AnimatedComponent from "../../../components/AnimatedComponent"
 
 function SereneSkin() {
   return (
+    <AnimatedComponent>
     <main>
         <div className={styles.maincontainer}>
           <div className={styles.mainpart}>
@@ -110,7 +112,8 @@ function SereneSkin() {
           </div>
         </div>
       </main>
-  )
+      </AnimatedComponent>
+  ) 
 }
 
 export default SereneSkin
