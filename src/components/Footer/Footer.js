@@ -1,7 +1,56 @@
+import styles from "./style.module.css";
+import Logo from "../../assets/images/HDSlogo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+  faBehance,
+} from "@fortawesome/free-brands-svg-icons"; // Use free-brands-svg-icons package for social media icons
+
 function Footer() {
   return (
-    <div></div>
-  )
+    <div className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.links}>
+          <a href="/">
+            <img src={Logo} alt="LOGO" className={styles.logo} />
+          </a>
+          <p>Follow Us On:</p>
+          <a href="/">
+            <FontAwesomeIcon className={styles.link} icon={faLinkedin} />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon className={styles.link} icon={faFacebook} />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon className={styles.link} icon={faInstagram} />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon className={styles.link} icon={faBehance} />
+          </a>
+        </div>
+        <div className={styles.links}>
+          <a href="/">
+            <p className={styles.link}>About</p>
+          </a>
+          <a href="/">
+            <p className={styles.link}>Service</p>
+          </a>
+          <a href="/">
+            <p className={styles.link}>Work</p>
+          </a>
+        </div>
+        <div className={styles.links}>
+          <p>Let's Do it - </p>
+          <a href="/">
+            <button className={styles.button}>Contact Us</button>
+          </a>
+        </div>
+      </div>
+      <p className={styles.copy}>©2023 Copyright Haraay Studio</p>
+    </div>
+  );
 }
 
-export default Footer 
+export default Footer;
