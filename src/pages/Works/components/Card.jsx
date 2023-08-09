@@ -36,8 +36,8 @@ export default function Card() {
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
-            <p>RAD Media</p>
-            <p>Branding | Website</p>
+            <p style={{"color": "white"}}>RAD Media</p>
+            <p style={{"color": "white"}}>Branding | Website</p>
           </div>
           <img src={RadMedia} alt="SereneSkin" />
           <a href="/works/radmedia">
