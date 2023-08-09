@@ -51,15 +51,19 @@
 
 @media (max-width: 850px){
     .footer{
-        align-items: center;
+        align-items: flex-start;
         gap: 10px;
-        padding: 0 0;
+        padding: 0 20px;
     }
     .container{
         flex-direction: column-reverse;
+        align-items: flex-start;
         gap: 20px;
     }
     .logo{
         display: none;
+    }
+    .linkstwo{
+        margin-left: -15px;
     }
 }

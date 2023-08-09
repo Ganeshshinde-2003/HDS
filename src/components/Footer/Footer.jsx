@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.links}>
+        <div className={`${styles.links} ${styles.linkstwo}`}>
           <a href="/">
             <img src={Logo} alt="LOGO" className={styles.logo} />
           </a>
@@ -48,7 +48,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <p className={styles.copy}>©2023 Copyright Haraay Studio</p>
+      <p className={styles.copy}>©2023 Copyright Haraay Design Studio LLP</p>
     </div>
   );
 }
