@@ -98,7 +98,7 @@ export default function Card() {
             <p>Toot</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Toot} alt="SereneSkin" />
+          <img src={Toot} alt="toot" />
           <a href="/works/toot">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
@@ -110,7 +110,7 @@ export default function Card() {
             <p>Hathkari & Co</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Hathkari} alt="SereneSkin" />
+          <img src={Hathkari} alt="hathkari" />
           <a href="/works/hathkari">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
@@ -120,7 +120,7 @@ export default function Card() {
             <p>Creamforest</p>
             <p>Branding | Website</p>
           </div>
-          <img src={CreamForest} alt="SereneSkin" />
+          <img src={CreamForest} alt="creamforest" />
           <a href="/works/creamforest">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
