@@ -66,15 +66,15 @@ function Toot() {
           </section>
           <hr />
           <div className={styles.headings}>
-          <p>Hathkari & co</p>
-          <p>Design Create Deliver</p>
-        </div>
-        <div className={styles.last}>
-          <img src={img7} alt="RAD Media" className={styles.lastimg} />
-          <a href="/works/radmedia">
-            <button className={styles.button}>View Case Study</button>
-          </a>
-        </div>
+            <p>Hathkari & co</p>
+            <p>Design Create Deliver</p>
+          </div>
+          <div className={styles.last}>
+            <img src={img7} alt="RAD Media" className={styles.lastimg} />
+            <a href="/works/radmedia">
+              <button className={styles.button}>View Case Study</button>
+            </a>
+          </div>
         </div>
       </main>
     </AnimatedComponent>

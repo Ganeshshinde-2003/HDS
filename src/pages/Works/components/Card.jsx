@@ -111,7 +111,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Hathkari} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/hathkari">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -121,7 +121,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={CreamForest} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/creamforest">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
