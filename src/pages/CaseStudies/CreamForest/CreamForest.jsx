@@ -8,6 +8,7 @@ import img4 from "../../../assets/casestudies/CreamForest/behance-05.png";
 import img5 from "../../../assets/casestudies/CreamForest/behance-07.png";
 import img6 from "../../../assets/casestudies/CreamForest/behance-06.png";
 import img7 from "../../../assets/casestudies/CreamForest/reels-08 1.png";
+import img8 from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 
 function CreamForest() {
   return (
@@ -69,6 +70,19 @@ function CreamForest() {
             <img src={img6} alt="CreamForest" />
             <img src={img7} alt="CreamForest" />
           </section>
+          <div className={styles.headings}>
+            <p>Cream Forest</p>
+            <p>Organic Ice- Cream</p>
+          </div>
+          <div className={styles.last}>
+            <img
+              src={img8}
+              alt="CreamForest"
+            />
+            <a href="/works/pawpet">
+              <button className={styles.button}>View Case Study</button>
+            </a>
+          </div>
         </div>
       </main>
     </AnimatedComponent>

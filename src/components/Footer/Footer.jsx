@@ -6,7 +6,7 @@ import {
   faFacebook,
   faInstagram,
   faBehance,
-} from "@fortawesome/free-brands-svg-icons"; // Use free-brands-svg-icons package for social media icons
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -31,7 +31,7 @@ function Footer() {
           </a>
         </div>
         <div className={styles.links}>
-          <a href="/aboutus">
+          <a href="/about">
             <p className={styles.link}>About</p>
           </a>
           <a href="/">

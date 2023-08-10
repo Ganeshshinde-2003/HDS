@@ -13,6 +13,8 @@ import Hathkari from "./pages/CaseStudies/hathkari/Hathkari";
 import CreamForest from "./pages/CaseStudies/CreamForest/CreamForest";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import About from "./pages/about/about";
+import Stone from "./pages/CaseStudies/TheStone/Stone";
+import PawPet from "./pages/CaseStudies/PawPet/PawPet";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -71,6 +73,8 @@ function App() {
             <Route path="/works/toot" element={<Toot />} />
             <Route path="/works/hathkari" element={<Hathkari />} />
             <Route path="/works/creamforest" element={<CreamForest />} />
+            <Route path="/works/thestone" element={<Stone />} />
+            <Route path="/works/pawpet" element={<PawPet />} />
           </Routes>
         </AnimatePresence>
         <Footer />

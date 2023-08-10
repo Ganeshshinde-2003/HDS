@@ -1,12 +1,13 @@
 .container{
     display: flex;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 150px;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .container .h1 {
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 45px;
+    font-weight: bolder;
 }
 .lets{
     font-size: 50px;
@@ -28,8 +29,8 @@
     }
     .container .h1 {
         padding-left: 10px;
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 30px;
+        font-weight: bolder;
     }
     .lets{
         font-size: 30px;
