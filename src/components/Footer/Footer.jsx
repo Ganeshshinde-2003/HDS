@@ -43,7 +43,7 @@ function Footer() {
         </div>
         <div className={styles.links}>
           <p>Let's Do it - </p>
-          <a href="/">
+          <a href="/contactus">
             <button className={styles.button}>Contact Us</button>
           </a>
         </div>
