@@ -5,10 +5,12 @@ import Logo from "../../assets/images/HDSlogo.png";
 import styles from "./style.module.css";
 
 function Navbar() {
-  const [display, setDisplay] = useState(window.innerWidth <= 800 ? false : true);
+  const [display, setDisplay] = useState(
+    window.innerWidth <= 800 ? false : true
+  );
 
   const toggleMenu = () => {
-      setDisplay(!display);
+    setDisplay(!display);
   };
 
   return (
@@ -24,11 +26,13 @@ function Navbar() {
           <div className={styles.navigation}>
             <a href="/">Work</a>
             <a href="/">Service</a>
-            <a href="/">About</a>
+            <a href="/about">About</a>
             <a href="/">Careers</a>
           </div>
           <div>
-            <button className={styles.contact}>Contact us</button>
+            <a href="/contactus">
+              <button className={styles.contact}>Contact us</button>
+            </a>
           </div>
         </div>
       </div>

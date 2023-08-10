@@ -71,7 +71,7 @@ function Toot() {
           </div>
           <div className={styles.last}>
             <img src={img7} alt="RAD Media" className={styles.lastimg} />
-            <a href="/works/radmedia">
+            <a href="/works/hathkari">
               <button className={styles.button}>View Case Study</button>
             </a>
           </div>
