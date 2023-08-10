@@ -71,8 +71,7 @@ function CreamForest() {
             <img src={img7} alt="CreamForest" />
           </section>
           <div className={styles.headings}>
-            <p>Cream Forest</p>
-            <p>Organic Ice- Cream</p>
+            <p>PawPet</p>
           </div>
           <div className={styles.last}>
             <img
