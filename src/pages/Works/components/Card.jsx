@@ -36,8 +36,8 @@ export default function Card() {
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
-            <p>RAD Media</p>
-            <p>Branding | Website</p>
+            <p style={{"color": "white"}}>RAD Media</p>
+            <p style={{"color": "white"}}>Branding | Website</p>
           </div>
           <img src={RadMedia} alt="SereneSkin" />
           <a href="/works/radmedia">
@@ -98,8 +98,8 @@ export default function Card() {
             <p>Toot</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Toot} alt="SereneSkin" />
-          <a href="/">
+          <img src={Toot} alt="toot" />
+          <a href="/works/toot">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -110,8 +110,8 @@ export default function Card() {
             <p>Hathkari & Co</p>
             <p>Branding | Website</p>
           </div>
-          <img src={Hathkari} alt="SereneSkin" />
-          <a href="/">
+          <img src={Hathkari} alt="hathkari" />
+          <a href="/works/hathkari">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -120,8 +120,8 @@ export default function Card() {
             <p>Creamforest</p>
             <p>Branding | Website</p>
           </div>
-          <img src={CreamForest} alt="SereneSkin" />
-          <a href="/">
+          <img src={CreamForest} alt="creamforest" />
+          <a href="/works/creamforest">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
