@@ -15,6 +15,8 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import About from "./pages/about/about";
 import Stone from "./pages/CaseStudies/TheStone/Stone";
 import PawPet from "./pages/CaseStudies/PawPet/PawPet";
+import Culinary from "./pages/CaseStudies/Culinary/Culinary";
+import Atmabodh from "./pages/CaseStudies/Atmabodh/Atmabodh";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -75,9 +77,11 @@ function App() {
             <Route path="/works/creamforest" element={<CreamForest />} />
             <Route path="/works/thestone" element={<Stone />} />
             <Route path="/works/pawpet" element={<PawPet />} />
+            <Route path="/works/culinary" element={<Culinary />} />
+            <Route path="/works/atmabodh" element={<Atmabodh />} />
           </Routes>
         </AnimatePresence>
-        <Footer />
+        <Footer /> 
       </Router>
     </div>
   );

@@ -57,7 +57,7 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={AthmaBodhana} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/atmabodh">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
@@ -67,7 +67,7 @@ export default function Card() {
             <p>Branding</p>
           </div>
           <img src={Culinary} alt="SereneSkin" />
-          <a href="/">
+          <a href="/works/culinary">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
