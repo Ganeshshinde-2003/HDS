@@ -34,7 +34,6 @@ function Stone() {
               clients have a multiple project history
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Branding</p>
             <p>

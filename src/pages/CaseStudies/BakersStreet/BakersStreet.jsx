@@ -38,7 +38,6 @@ function BakersStreet() {
             magnificent way to create a memorable experience for everyone.
           </p>
         </section>
-        <hr />
         <section className={styles.text}>
           <p>Branding</p>
           <p>
@@ -53,7 +52,6 @@ function BakersStreet() {
             audience.
           </p>
         </section>
-        <hr />
         <section className={styles.text}>
           <p>Color Palette</p>
           <p>

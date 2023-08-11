@@ -32,7 +32,6 @@ function CreamForest() {
             </p>
           </section>
           <br />
-          <hr />
           <br />
           <section className={styles.text}>
             <p>Branding</p>
@@ -70,7 +69,7 @@ function CreamForest() {
             <img src={img6} alt="CreamForest" />
             <img src={img7} alt="CreamForest" />
           </section>
-          <div className={styles.headings}>
+          {/* <div className={styles.headings}>
             <p>PawPet</p>
           </div>
           <div className={styles.last}>
@@ -81,7 +80,7 @@ function CreamForest() {
             <a href="/works/pawpet">
               <button className={styles.button}>View Case Study</button>
             </a>
-          </div>
+          </div> */}
         </div>
       </main>
     </AnimatedComponent>

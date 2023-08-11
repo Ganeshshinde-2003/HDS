@@ -34,7 +34,6 @@ function SereneSkin() {
                 that every individual may use.
               </p>
             </section>
-            <hr />
             <section className={styles.text}>
               <p>Branding</p>
               <p>
@@ -48,7 +47,6 @@ function SereneSkin() {
                 encourage a positive change in how people perceive their skin.
               </p>
             </section>
-            <hr />
             <section className={styles.text}>
               <p>Color Palette</p>
               <p>

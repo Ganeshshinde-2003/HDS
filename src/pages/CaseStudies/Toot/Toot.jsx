@@ -29,7 +29,6 @@ function Toot() {
               to ensure your kids has the brightest and healthest smile
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Branding</p>
             <p>
@@ -38,7 +37,6 @@ function Toot() {
               aesthetic of the brand is simple and clean yet pop-py.
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Color Palette</p>
             <p>

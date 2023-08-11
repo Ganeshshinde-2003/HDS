@@ -11,7 +11,7 @@ import img7 from "../../../assets/casestudies/pawpets/Artboard 1_4.png";
 import img8 from "../../../assets/casestudies/pawpets/Artboard 1.png";
 import img9 from "../../../assets/casestudies/pawpets/Open-Magazine-Mockup-min.jpg";
 import img10 from "../../../assets/casestudies/pawpets/Free A4 Magazine Mockup-min.jpg";
-import img11 from "../../../assets/casestudies/CreamForest/Random Ice Cream Cups Mockup 1 (1).png";
+import img11 from "../../../assets/casestudies/thestone/31_May_09 (1)-min-min 1.png";
 
 function PawPet() {
   return (
@@ -32,7 +32,6 @@ function PawPet() {
               did rebranding and website that reflected values.
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Branding</p>
             <p>
@@ -43,7 +42,6 @@ function PawPet() {
               rebranding and website that reflected values.
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Color Palette</p>
             <p>
@@ -79,9 +77,9 @@ function PawPet() {
           <div className={styles.last}>
             <img
               src={img11}
-              alt="CreamForest"
+              alt="TheStone"
             />
-            <a href="/works/creamforest">
+            <a href="/works/thestone">
               <button className={styles.button}>View Case Study</button>
             </a>
           </div>

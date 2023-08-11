@@ -49,7 +49,6 @@ function RadMedia() {
               the medium from photography to videography.
             </p>
           </section>
-          <hr />
           <section className={styles.text}>
             <p>Branding</p>
             <p>

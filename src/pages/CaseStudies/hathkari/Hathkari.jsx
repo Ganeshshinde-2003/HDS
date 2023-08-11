@@ -29,7 +29,6 @@ function Hathkari() {
               Cherry, Lemon and Blue Raspberry with all the natural ingredients
               to ensure your kids has the brightest and healthest smile
             </p>
-            <hr />
           </section>
           <section className={styles.text}>
             <p>Branding</p>
