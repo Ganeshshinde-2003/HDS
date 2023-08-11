@@ -17,7 +17,7 @@ function Navbar() {
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <img src={Logo} alt="HDSLLP" className={styles.logo} />
+          <a href="/"><img src={Logo} alt="HDSLLP" className={styles.logo} /></a>
         </div>
         <div
           className={styles.secdev}

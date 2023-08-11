@@ -10,7 +10,7 @@ function ContactUs() {
         <p className={styles.lets}>
           LET'S CHAT ABOUT
           <br />
-          YOUR GOALS
+          <i>YOUR GOALS</i>
         </p>
         <p>
           YOU HAVE A PROJECT ? <br />

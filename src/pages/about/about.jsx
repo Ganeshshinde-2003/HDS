@@ -9,23 +9,21 @@ function About() {
     <AnimatedComponent>
       <div className={styles.container}>
         <section className={styles.text}>
-          WE ARE DISRUPTIVE!
-          <br />
-          We are here to create, to play, to be the curious ones, <br />
-          to connect the dots, to think and breathe design, to
-          <br />
-          be strategists and storytellers... <br />
-          To go further.
+          <div className={styles.headingtext}>
+            <p>WE ARE DISRUPTIVE!</p>
+            <p>
+              We are here to create, to play, to be the curious ones, to connect
+              the dots, to think and breathe design, to be strategists and
+              storytellers... To go further.
+            </p>
+          </div>
         </section>
         <div className={styles.textincolor}>
           <p>
-            We are connections enablers We start with people.
-            <br /> We invest in discovery and understanding, ensuring our
-            approach
-            <br /> keeps empathy and people at its core. <br />
-            Through this we seek to connect, captivate and inspire;
-            <br /> creating meaningful and measurable outcomes in businesses,
-            <br />
+            We are connections enablers We start with people. We invest in
+            discovery and understanding, ensuring our approach keeps empathy and
+            people at its core. Through this we seek to connect, captivate and
+            inspire; creating meaningful and measurable outcomes in businesses,
             partnerships, and culture.
           </p>
         </div>
@@ -62,7 +60,7 @@ function About() {
           </div>
           <div>
             <a href="/contactus">
-                <button className={styles.contact}>Get in touch!</button>
+              <button className={styles.contact}>Get in touch!</button>
             </a>
           </div>
         </section>
