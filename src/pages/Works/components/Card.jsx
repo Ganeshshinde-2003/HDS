@@ -4,11 +4,11 @@ import RadMedia from "../../../assets/images/radmedia.png";
 import BakerStreet from "../../../assets/images/bakerstreet.png";
 import AthmaBodhana from "../../../assets/images/Atmabodh.png";
 import Culinary from "../../../assets/images/Culinary .jpg";
-import Eunioa from "../../../assets/images/Eunoia.jpg";
 import Stone from "../../../assets/images/stone.png";
 import Toot from "../../../assets/images/TOOT.png";
 import Hathkari from "../../../assets/images/hathkari.png";
 import CreamForest from "../../../assets/images/creameforest.png";
+import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 
 export default function Card() {
   return (
@@ -75,11 +75,11 @@ export default function Card() {
       <div className={styles.thirdcard}>
         <div className={styles.casestudy}>
           <div className={styles.text}>
-            <p>Eunoia</p>
+            <p>PawPet</p>
             <p>Branding</p>
           </div>
-          <img src={Eunioa} alt="SereneSkin" />
-          <a href="/">
+          <img src={PawPet} alt="SereneSkin" />
+          <a href="/works/pawpet">
             <button className={styles.casebutton}>View Case Study</button>
           </a>
         </div>
