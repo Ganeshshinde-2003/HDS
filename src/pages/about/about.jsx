@@ -2,7 +2,6 @@ import React from "react";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
-import img2 from "../../assets/aboutus/balazs-ketyi-LPWl2pEVGKc-unsplash 1.png";
 
 function About() {
   return (
@@ -47,8 +46,120 @@ function About() {
         <section className={styles.images}>
           <img src={img1} alt="bakerstreet" />
         </section>
-        <section className={styles.image}>
-          <img src={img2} alt="bakerstreet" />
+        <div className={`${styles.textincolor} ${styles.inwhite}`}>
+          <p>
+            Attention-worthy, shareable experiences don't just happen.They are
+            the results of long, rocky, difficult and always inspired road to
+            creative goodness at Haraay Studio. Why we do what we do says a lot
+            about us, but doing what we do is intricate work. That's precisely
+            why our process and our plan are our insights on market shifts,
+            competitive landscape and understanding of what the people
+            want.Coming up with stories that you can step inside of, are
+            brilliantly designed and inventively delivered takes meticulously
+            planned steps. Our aim is to remarkably engage key audiences
+            worldwide and here's how we do it.
+          </p>
+        </div>
+        <section className={styles.textimg}>
+          <div className={styles.image}></div>
+          <div className={styles.imagetxt}>
+            <p className={styles.boldheading}>
+              Understanding you is important{" "}
+            </p>
+            <p>
+              At Haraay, everything begins with a discovery session. We roll up
+              our sleeve, get ready to probe deeper and retrieve all critical
+              information.
+            </p>
+          </div>
+        </section>
+        <section className={styles.textimg}>
+          <div className={styles.imagetxt}>
+            <p className={styles.boldheading}>Market Analysis</p>
+            <p>
+              At this stage, you will be in awe of how well we translate your
+              goals into something distinct and identifiable. In a crowded
+              marketplace, it's not enough to just be different; we help you
+              forge an identity that is built to last and connects with your
+              audience on a deeper level.
+            </p>
+          </div>
+          <div className={styles.image}></div>
+        </section>
+        <section className={styles.textimg}>
+          <div className={styles.image}></div>
+          <div className={styles.imagetxt}>
+            <p className={styles.boldheading}>
+              Disruptive concepts that make noise
+            </p>
+            <p>
+              This is where we connect all the dots. Details are important, but
+              the big picture is what counts in the real marketplace. Leveraging
+              your unique value propositions with unparalleled clarity and
+              confidence, we help vour idea do one thing well.
+            </p>
+          </div>
+        </section>
+        <section className={styles.textimg}>
+          <div className={styles.imagetxt}>
+            <p className={styles.boldheading}> Differentiate</p>
+            <p>
+              This is the stage when everyone says "make us something
+              unconventional." Researching, designing and building brands,
+              experience and technologies, we breathe life into concepts that
+              will change minds, generate curiosity and drive results for our
+              clients.
+            </p>
+          </div>
+          <div className={styles.image}></div>
+        </section>
+        <section className={styles.textimg}>
+          <div className={styles.image}></div>
+          <div className={styles.imagetxt}>
+            <p className={styles.boldheading}>Proof of delivery</p>
+            <p>
+              One last thing before the hand-off, the scope of testing is
+              identified. We go through a number of experiments, run tests of
+              all kinds and imagine different scenarios to ensure everything is
+              as perfect as we think it is!
+            </p>
+          </div>
+        </section>
+        <section className={styles.faqsection}>
+          <p className={styles.faqhead}>FAQS</p>
+          <div className={styles.faq}>
+            <p className={styles.question}>Why go with Haraay?</p>
+            <p className={styles.ans}>
+              Being one of India's leading creative agencies, we are known for
+              creative, disruptive, out-of-the-box and innovative work that
+              breaks industry standards.
+            </p>
+          </div>
+          <div className={styles.faq}>
+            <p className={styles.question}>
+              What is creative design at Haraay?
+            </p>
+            <p className={styles.ans}>
+              As a creative agency that's big on creative design thinking, it is
+              central to all the ways in which we build commercial value for our
+              clients. Creative design thinking and industry-leading designs at
+              Haraay Studio together attract attention to your marketing,
+              enhance the quality of your brand message and elevate brand
+              experiences.
+            </p>
+          </div>
+          <div className={styles.faq}>
+            <p className={styles.question}>
+              What kind of clients do we work with?
+            </p>
+            <p className={styles.ans}>
+              We help small and medium brands in USA, Los Angeles, Chicago,
+              London, Dubai, Sydney, Melbourne, Mumbai, Australia Delhi,
+              Bangalore and Pan India. We work with B2B, B2C and digital
+              businesses across Technology, FMCG, E-commerce, Health and
+              Wellness, Fashion, Beauty, Lifestyle and Entertainment.
+            </p>
+          </div>
         </section>
         <section className={styles.contactus}>
           <div className={styles.textpart}>

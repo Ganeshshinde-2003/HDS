@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .text,
 .images {
@@ -43,11 +42,6 @@
   text-align: center;
   padding: 62px 169px;
 }
-.image {
-  width: auto;
-  margin: 0 auto;
-  padding: 0 40px;
-}
 .contactus {
   display: flex;
   align-items: center;
@@ -76,7 +70,57 @@
   font-weight: bold;
   cursor: pointer;
 }
-@media (max-width: 600px) {
+.inwhite {
+  background-color: #fff;
+  color: black;
+  padding: 0 40px;
+}
+.textimg {
+  display: flex;
+  gap: 20px;
+  padding: 45px 120px;
+}
+.image,
+.imagetxt {
+  width: 50%;
+}
+.imagetxt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.imagetxt .boldheading {
+  font-weight: bold;
+  font-size: 20px;
+}
+.imagetxt p {
+  font-size: 14px;
+}
+.faqsection {
+  background-color: #E2F5FF;
+  padding: 45px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faqsection .faqhead {
+  color: #000;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.question{
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
   .text {
     padding: 45px 10px;
     font-size: 12px;
@@ -101,7 +145,6 @@
   .textpart p:nth-child(2) {
     font-size: 10px;
   }
-  .image,
   .images {
     padding: 0;
   }
@@ -113,5 +156,26 @@
     width: 150px;
     padding: 15px 15px;
     font-size: 15px;
+  }
+  .faqsection{
+    padding: 45px 10px;
+  }
+  .faqsection .faqhead{
+    font-size: 45px;
+  }
+  .question{
+    font-size: 15px;
+  }
+  .ans{
+    font-size: 14px;
+  }
+  .image{
+    display: none;
+  }
+  .textimg{
+    padding: 45px 10px;
+  }
+  .imagetxt{
+    width: 100%;
   }
 }
