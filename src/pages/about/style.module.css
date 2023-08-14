@@ -146,10 +146,11 @@
 .dynamicP {
   color: black;
   font-family: Poppins;
-  font-size: 290px;
+  font-size: 300px;
+  font-style: normal;
   font-weight: bolder;
   line-height: normal;
-  padding-left: 26%;
+  padding-left: 27%;
 }
 @media (max-width: 1200px){
   .dynamicP{
