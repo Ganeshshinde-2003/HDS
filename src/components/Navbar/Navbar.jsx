@@ -26,7 +26,7 @@ function Navbar() {
           <div className={styles.navigation}>
             <a href="/">Work</a>
             <a href="/services">Service</a>
-            <a href="/about">About Haraay</a>
+            <a href="/about">About</a>
             <a href="/">Careers</a>
           </div>
           <div>
