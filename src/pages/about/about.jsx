@@ -16,7 +16,7 @@ function About() {
     const existingTextElement = scrollSection.querySelector(
       `.${styles.dynamicP}` 
     );
-    if (existingTextElement) {
+    if (existingTextElement) { 
       existingTextElement.innerText = textToShow;
     } else {
       let tstCSS = document.createElement("p");
