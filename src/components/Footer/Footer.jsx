@@ -32,7 +32,7 @@ function Footer() {
         </div>
         <div className={styles.links}>
           <a href="/about">
-            <p className={styles.link}>About</p>
+            <p className={styles.link}>About Haraay</p>
           </a>
           <a href="/services">
             <p className={styles.link}>Service</p>

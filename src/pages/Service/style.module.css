@@ -70,7 +70,7 @@
     background-color: white;
   }
   to {
-    background-color: #e2f5ff;
+    background-color: rgb(232, 23, 103);
   }
 }
 .changeColorfour {
@@ -79,7 +79,7 @@
 
 @keyframes fadeInBackgroundfour {
   from {
-    background-color: #e2f5ff;
+    background-color: #fff;
   }
   to {
     background-color: #fffff4;
