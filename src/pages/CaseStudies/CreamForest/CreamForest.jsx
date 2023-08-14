@@ -8,7 +8,7 @@ import img4 from "../../../assets/casestudies/CreamForest/behance-05.png";
 import img5 from "../../../assets/casestudies/CreamForest/behance-07.png";
 import img6 from "../../../assets/casestudies/CreamForest/behance-06.png";
 import img7 from "../../../assets/casestudies/CreamForest/reels-08 1.png";
-import img8 from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
+// import img8 from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 
 function CreamForest() {
   return (
