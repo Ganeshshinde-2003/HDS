@@ -27,6 +27,9 @@ img {
   display: flex;
   padding: 20px 40px;
 }
+.textpart {
+  gap: 40px;
+}
 .text :nth-child(1) {
   width: 50%;
   font-size: 29px;

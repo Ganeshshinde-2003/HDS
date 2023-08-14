@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+.header {
+  height: 100vh;
+  background-color: #2b2322;
+  margin-top: -30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+.header .headings {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  line-height: normal;
+  font-weight: 900;
+  word-spacing: -10px;
+  letter-spacing: -2px;
+}
+.header p:nth-child(2) {
+  font-size: 20px;
+}
+.header .circle {
+  background-color: transparent;
+  border: 5px solid white;
+  width: 151px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: -70%;
+  margin-top: -44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 5s linear infinite;
+}
+.arrowdown {
+  font-size: 100px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.changeColor {
+  animation: fadeInBackground 1s ease forwards;
+}
+
+@keyframes fadeInBackground {
+  from {
+    background-color: #2b2322;
+  }
+  to {
+    background-color: white;
+  }
+}
+.changeColorthird {
+  animation: fadeInBackgroundthird 1s ease forwards;
+}
+
+@keyframes fadeInBackgroundthird {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #e2f5ff;
+  }
+}
+.changeColorfour {
+  animation: fadeInBackgroundfour 1s ease forwards;
+}
+
+@keyframes fadeInBackgroundfour {
+  from {
+    background-color: #e2f5ff;
+  }
+  to {
+    background-color: #fffff4;
+  }
+}
+.stickyColor {
+  animation: stickycolorchange 1s ease forwards;
+}
+
+@keyframes stickycolorchange {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #2b2322;
+  }
+}
+.lastPartColor {
+  animation: lastpartchangeColor 1s ease forwards;
+}
+
+@keyframes lastpartchangeColor {
+  from {
+    background-color: #2b2322;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+.secpart {
+  background-color: #2b2322;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.secfirst {
+  display: flex;
+  margin: 10px 80px;
+  gap: 50px;
+}
+.secfirst .head {
+  width: 50%;
+  font-size: 80px;
+  font-weight: bolder;
+  padding-right: 45px;
+}
+.secfirst .text {
+  width: 50%;
+  font-size: 30px;
+  font-weight: 400;
+}
+.buttonspart {
+  margin: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  color: black;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.thirdpart {
+  background-color: white;
+}
+.forthpart {
+  background-color: #e2f5ff;
+}
+
+.stickyparent {
+  height: 200vh;
+  background-color: #fff;
+}
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.scrollsection {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200vw;
+  will-change: transform;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0 5vw;
+}
+.dynamicP {
+  color: black;
+  font-family: Poppins;
+  font-size: 500px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-left: 12%;
+}
+.lastpart {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lastpart p {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@media (max-width: 1000px){
+  .secfirst .text{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    height: auto;
+  }
+  .header .headings{
+    font-size: 55px;
+    word-spacing: -4px;
+    letter-spacing: -2px;
+  }
+  .arrowdown{
+    font-size: 70px;
+  }
+  .header .circle{
+    width: 100px;
+    height: 100px;
+  }
+  .secfirst{
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 40px;
+  }
+  .secfirst .head {
+    width: 100%;
+    padding-right: 0;
+    font-size: 50px;
+  }
+  .secfirst .text{
+    width: 100%;
+    font-size: 20px;
+  }
+  .buttonspart{
+    margin: 10px 40px;
+  }
+  .secpart{
+    height: auto;
+  }
+  .lastpart{
+    height: auto;
+  }
+  .button{
+    font-size: 14px;
+  }
+  .dynamicP{
+    font-size: 220px;
+  }
+  .lastpart p {
+    font-size: 45px;
+  }
+}
+@media (max-width: 450px){
+  .dynamicP{
+    font-size: 170px;
+  }
+  .header .headings {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 0px;
+  }
+  .header p:nth-child(2) {
+    font-size: 14px;
+  }
+  .arrowdown{
+    font-size: 50px;
+  }
+  .header .circle{
+    width: 70px;
+    height: 70px;
+  }
+  .secpart{
+    background-color: white;
+  }
+  .secfirst {
+    margin: 10px 10px;
+  }
+  .buttonspart{
+    margin: 10px 10px;
+  }
+  .secfirst .head{
+    font-size: 35px;
+  }
+  .secfirst .text {
+    font-size: 14px;
+  }
+  .button{
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+  .dynamicP{
+    font-size: 158px;
+  }
+  .lastpart p {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .changeColor {
+    animation: fadeInBackground 1s ease forwards;
+  }
+  
+  @keyframes fadeInBackground {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: white;
+    }
+  }
+}
