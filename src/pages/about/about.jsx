@@ -1,9 +1,44 @@
-import React from "react";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
+import { useEffect } from "react";
 
 function About() {
+
+  useEffect(() => {
+    const texts = ["OUR", "PROCESS"];
+    const stickySection = document.querySelector(`.${styles.sticky}`);
+    const scrollSection = stickySection.querySelector(
+      `.${styles.scrollsection}`
+    ); 
+
+    let textToShow = texts.join(" ");
+    const existingTextElement = scrollSection.querySelector(
+      `.${styles.dynamicP}` 
+    );
+    if (existingTextElement) { 
+      existingTextElement.innerText = textToShow;
+    } else {
+      let tstCSS = document.createElement("p");
+      tstCSS.innerText = textToShow;
+      tstCSS.className = styles.dynamicP;
+      scrollSection.appendChild(tstCSS);
+    }
+
+    const handleScroll = () => {
+      const offset = stickySection.parentElement.offsetTop;
+      let percentage = ((window.scrollY - offset) / window.innerHeight) * 100;
+      percentage = percentage < 0 ? 0 : percentage > 100 ? 100 : percentage;
+      scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <AnimatedComponent>
       <div className={styles.container}>
@@ -46,6 +81,11 @@ function About() {
         <section className={styles.images}>
           <img src={img1} alt="bakerstreet" />
         </section>
+        <div className={styles.stickyparent}>
+          <div className={styles.sticky}>
+            <div className={styles.scrollsection}></div>
+          </div>
+        </div>
         <div className={`${styles.textincolor} ${styles.inwhite}`}>
           <p>
             Attention-worthy, shareable experiences don't just happen.They are

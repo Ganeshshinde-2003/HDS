@@ -65,9 +65,7 @@ function Serivce() {
       `.${styles.scrollsection}`
     );
 
-    let textToShow = texts.join(""); // Join the texts with a space
-
-    // Check if the dynamicP class element already exists
+    let textToShow = texts.join("");
     const existingTextElement = scrollSection.querySelector(
       `.${styles.dynamicP}`
     );

@@ -19,7 +19,7 @@
   font-size: 80px;
   line-height: normal;
   font-weight: 900;
-  word-spacing: -10px;
+  word-spacing: 0px;
   letter-spacing: -2px;
 }
 .header p:nth-child(2) {
@@ -70,7 +70,7 @@
     background-color: white;
   }
   to {
-    background-color: #e2f5ff;
+    background-color: rgb(232, 23, 103);
   }
 }
 .changeColorfour {
@@ -79,7 +79,7 @@
 
 @keyframes fadeInBackgroundfour {
   from {
-    background-color: #e2f5ff;
+    background-color: #fff;
   }
   to {
     background-color: #fffff4;
@@ -186,7 +186,7 @@
   font-family: Poppins;
   font-size: 500px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: bolder;
   line-height: normal;
   padding-left: 12%;
 }
@@ -265,7 +265,7 @@
     font-size: 170px;
   }
   .header .headings {
-    font-size: 30px;
+    font-size: 27px;
     word-spacing: 2px;
     letter-spacing: 0px;
   }
@@ -286,17 +286,13 @@
     margin: 10px 10px;
   }
   .buttonspart{
-    margin: 10px 10px;
+    display: none;
   }
   .secfirst .head{
     font-size: 35px;
   }
   .secfirst .text {
     font-size: 14px;
-  }
-  .button{
-    font-size: 12px;
-    padding: 10px 4px;
   }
   .dynamicP{
     font-size: 158px;
