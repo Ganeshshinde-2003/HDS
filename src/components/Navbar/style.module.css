@@ -42,7 +42,7 @@ a:hover {
     padding: 10px 40px;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 30px;
     border: none;
 }
 @media (max-width: 800px){
