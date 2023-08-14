@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 .header {
-  height: auto;
+  height: 100vh;
   background-color: #2b2322;
   margin-top: -30px;
   color: white;
@@ -203,4 +203,118 @@
   font-size: 80px;
   font-weight: 900;
   line-height: normal;
+}
+
+@media (max-width: 1000px){
+  .secfirst .text{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    height: auto;
+  }
+  .header .headings{
+    font-size: 55px;
+    word-spacing: -4px;
+    letter-spacing: -2px;
+  }
+  .arrowdown{
+    font-size: 70px;
+  }
+  .header .circle{
+    width: 100px;
+    height: 100px;
+  }
+  .secfirst{
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 40px;
+  }
+  .secfirst .head {
+    width: 100%;
+    padding-right: 0;
+    font-size: 50px;
+  }
+  .secfirst .text{
+    width: 100%;
+    font-size: 20px;
+  }
+  .buttonspart{
+    margin: 10px 40px;
+  }
+  .secpart{
+    height: auto;
+  }
+  .lastpart{
+    height: auto;
+  }
+  .button{
+    font-size: 14px;
+  }
+  .dynamicP{
+    font-size: 220px;
+  }
+  .lastpart p {
+    font-size: 45px;
+  }
+}
+@media (max-width: 450px){
+  .dynamicP{
+    font-size: 170px;
+  }
+  .header .headings {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 0px;
+  }
+  .header p:nth-child(2) {
+    font-size: 14px;
+  }
+  .arrowdown{
+    font-size: 50px;
+  }
+  .header .circle{
+    width: 70px;
+    height: 70px;
+  }
+  .secpart{
+    background-color: white;
+  }
+  .secfirst {
+    margin: 10px 10px;
+  }
+  .buttonspart{
+    margin: 10px 10px;
+  }
+  .secfirst .head{
+    font-size: 35px;
+  }
+  .secfirst .text {
+    font-size: 14px;
+  }
+  .button{
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+  .dynamicP{
+    font-size: 158px;
+  }
+  .lastpart p {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .changeColor {
+    animation: fadeInBackground 1s ease forwards;
+  }
+  
+  @keyframes fadeInBackground {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: white;
+    }
+  }
 }
