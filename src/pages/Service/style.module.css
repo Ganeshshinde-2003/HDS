@@ -191,6 +191,7 @@
   padding-left: 12%;
 }
 .lastpart {
+  background-color: #2b2322;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -304,6 +305,9 @@
   .changeColor {
     animation: fadeInBackground 1s ease forwards;
   }
+  .lastpart{
+    background-color: white;
+  }
   
   @keyframes fadeInBackground {
     from {
@@ -311,6 +315,18 @@
     }
     to {
       background-color: white;
+    }
+  }
+  .lastPartColor {
+    animation: lastpartchangeColor 1s ease forwards;
+  }
+  
+  @keyframes lastpartchangeColor {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: #fff;
     }
   }
 }
