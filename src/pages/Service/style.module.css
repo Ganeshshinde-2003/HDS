@@ -82,7 +82,7 @@
     background-color: #fff;
   }
   to {
-    background-color: #fffff4;
+    background-color: #fffaf0;
   }
 }
 .stickyColor {
@@ -200,9 +200,9 @@
 .lastpart p {
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
-  font-weight: 900;
+  font-weight: bold;
   line-height: normal;
 }
 
