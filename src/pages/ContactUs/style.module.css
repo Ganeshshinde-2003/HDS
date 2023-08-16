@@ -166,3 +166,23 @@
         width: 100%;
     }
   }
+  .alertContainer {
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -6%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: top 0.5s ease-in-out;
+    z-index: 9999;
+  }
+  .alertSuccess {
+    color: green;
+  }
+  .alertError {
+    color: red;
+    background-color: white;
+  }
+  

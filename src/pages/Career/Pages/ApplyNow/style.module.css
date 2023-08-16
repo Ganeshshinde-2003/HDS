@@ -81,8 +81,6 @@ form .name {
     background-position: 100%;
     color: rgb(232, 23, 103);
   }
-  /* Define the animated alert container */
-/* Define the animated alert container */
 .alertContainer {
   position: fixed;
   top: 6%;
@@ -95,14 +93,9 @@ form .name {
   transition: top 0.5s ease-in-out;
   z-index: 9999;
 }
-
-
-/* Success alert styles */
 .alertSuccess {
   color: green;
 }
-
-/* Error alert styles */
 .alertError {
   color: red;
   background-color: white;

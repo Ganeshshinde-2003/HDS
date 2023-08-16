@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./style.module.css";
+import { useNavigate } from "react-router-dom";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +16,56 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function ContactUs() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [desc, setDesc] = useState("");
+  const [isSuccessAlert, setIsSuccessAlert] = useState(false);
+  const [isErrorAlert, setIsErrorAlert] = useState(false);
+  const [errormsg, setErrormsg] = useState("Submission failed. Please try again.")
+
+  const navigate = useNavigate();
+
+  const data = {
+    firstName,
+    lastName,
+    email,
+    number,
+    description: desc,
+  };
+
+  const submitData = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setIsSuccessAlert(true);
+        setTimeout(() => {
+          setIsSuccessAlert(false);
+          setTimeout(() => {
+            navigate("/");
+          }, 1000);
+        }, 2000);
+      } else {
+        setIsErrorAlert(true)
+        setTimeout(() => {
+          setIsErrorAlert(false);
+        }, 2000);
+      }
+    } catch (error) {
+      setErrormsg("Network Error!")
+    }
+  }
+
   return (
     <AnimatedComponent>
       <div className={styles.main}>
@@ -41,24 +92,51 @@ function ContactUs() {
               />
             </div>
             <div className={styles.name}>
-              <input type="text" required placeholder="First Name" />
-              <input type="text" required placeholder="Last Name" />
+              <input
+                type="text"
+                required
+                placeholder="First Name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+              <input
+                type="text"
+                required
+                placeholder="Last Name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
             </div>
-            <input type="email" placeholder="Email" required />
-            <input type="text" placeholder="Phone" required />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Phone"
+              required
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+            />
             <textarea
               rows="7"
               cols="10"
               placeholder="How Can We Help You?"
               required
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
             />
-            <button className={styles.button}>Send Message</button>
+            <button className={styles.button} onClick={submitData}>Send Message</button>
           </form>
           <div className={styles.addr}>
             <p className={styles.head}>Contact info</p>
             <div className={styles.links}>
               <p>
-                <FontAwesomeIcon icon={faEnvelope} className={styles.mail} />{'     '}
+                <FontAwesomeIcon icon={faEnvelope} className={styles.mail} />
+                {"     "}
                 hellohuge@gmail.com
               </p>
               <p>
@@ -86,6 +164,20 @@ function ContactUs() {
             </div>
           </div>
         </div>
+        {isSuccessAlert && (
+        <div
+          className={`${styles.alertContainer} ${styles.alertSuccess} ${styles.slideIn}`}
+        >
+          Successfully submitted!
+        </div>
+      )}
+      {isErrorAlert && (
+        <div
+          className={`${styles.alertContainer} ${styles.alertError} ${styles.slideIn}`}
+        >
+          {errormsg}
+        </div>
+      )}
       </div>
     </AnimatedComponent>
   );
