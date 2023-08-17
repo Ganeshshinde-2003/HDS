@@ -21,6 +21,7 @@ import Serivce from "./pages/Service/Serivce";
 import CareerDashboard from "./pages/Career/Pages/Dashboard";
 import Alljobs from "./pages/Career/Pages/AllJobs/Alljobs";
 import ApplyNow from "./pages/Career/Pages/ApplyNow/ApplyNow";
+import Home from "./pages/LandingScreen/Home";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -70,7 +71,8 @@ function App() {
         <Navbar />
         <AnimatePresence>
           <Routes>
-            <Route path="/" element={<Works />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
             <Route path="/about" element={<About />} />
             <Route path="/expertise" element={<Serivce />} />
             <Route path="/contactus" element={<ContactUs />} />

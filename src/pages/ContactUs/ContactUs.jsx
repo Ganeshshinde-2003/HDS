@@ -137,11 +137,11 @@ function ContactUs() {
               <p>
                 <FontAwesomeIcon icon={faEnvelope} className={styles.mail} />
                 {"     "}
-                hellohuge@gmail.com
+                hello@haraaydesignstudio.com
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhone} className={styles.mail} />
-                +91 749-837-6495
+                +91 74983 76495
               </p>
               <p>
                 Follow Us On:

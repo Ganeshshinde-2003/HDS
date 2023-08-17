@@ -18,7 +18,7 @@ function ApplyNow() {
   );
 
   const navigate = useNavigate();
-
+  // hello@haraaydesignstudio.com
   const data = {
     firstName,
     lastName,

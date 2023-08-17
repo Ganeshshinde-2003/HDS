@@ -206,6 +206,10 @@
   line-height: normal;
 }
 
+.lastpart p span {
+  text-decoration: underline;
+}
+
 @media (max-width: 1000px){
   .secfirst .text{
     font-size: 25px;

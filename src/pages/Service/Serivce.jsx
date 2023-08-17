@@ -231,7 +231,7 @@ function Serivce() {
         <div className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
-            <br /> PROJECT ? LET'S TALK ABOUT IT
+            <br /> PROJECT ? <span>LET'S TALK ABOUT IT</span>
             <br />*
           </p>
         </div>

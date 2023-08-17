@@ -134,18 +134,12 @@
     gap: 10px;
     align-items: center;
   }
-  @media (max-width: 1070px){
+  @media (max-width: 1170px){
     .addr {
         padding-left: 10px;
     }
   }
   @media (max-width: 1000px) {
-    .card{
-        margin: 0 80px;
-        margin-bottom: 30px;
-    }
-  }
-  @media (max-width: 800px) {
     .card {
         margin: 0 30px;
         margin-bottom: 30px;

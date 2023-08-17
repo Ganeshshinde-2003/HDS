@@ -37,7 +37,7 @@ function Footer() {
           <a href="/expertise">
             <p className={styles.link}>Expertise</p>
           </a>
-          <a href="/">
+          <a href="/works">
             <p className={styles.link}>Work</p>
           </a>
         </div>
