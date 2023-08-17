@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&display=swap");
 
 * {
   margin: 0;
@@ -8,65 +8,115 @@
   /* overflow: hidden; */
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 30px;
-    gap: 20px;
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  gap: 20px;
 }
 
 .headings {
-    height: 130vh;
-    position: relative;
-    padding: 30px;
-    background: radial-gradient(circle, lighten(#2b2322, 5%) 15%, #2b2322);
+  height: 130vh;
+  position: relative;
+  padding: 30px;
+  background: radial-gradient(circle, lighten(#2b2322, 5%) 15%, #2b2322);
 }
 .jj {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 20vmin;
-    color: #2b2322;
-    line-height: 0.85;
-    background-size: contain;
-    background-clip: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20vmin;
+  color: #2b2322;
+  line-height: 0.85;
+  background-size: contain;
+  background-clip: text;
 }
 .jj + .jj {
-    color: #e5348c;
-    animation: meh 3s ease-out infinite alternate;
+  color: #e5348c;
+  animation: meh 3s ease-out infinite alternate;
 }
 @keyframes meh {
-    from {
-        clip-path: polygon(100% 0, 100% 100%, 20% 100%, 61% 91%, 94% 47%);
-    }
-    50% {
-        clip-path: polygon(100% 0, 100% 100%, 20% 100%, 59% 52%, 74% 13%);
-    }
-    to {
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 87% 41%);
-    }
+  from {
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 61% 91%, 94% 47%);
+  }
+  50% {
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 59% 52%, 74% 13%);
+  }
+  to {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 87% 41%);
+  }
 }
 .jj span {
-    display: block;
-    margin-bottom: 30px;
+  display: block;
+  margin-bottom: 30px;
 }
-.jj span:first-child{
-    font-size: 300px;
+.jj span:first-child {
+  font-size: 300px;
 }
-.jj span:nth-child(2){
-    font-size: 150px;
+.jj span:nth-child(2) {
+  font-size: 150px;
 }
-.jj span:nth-child(3){
-    font-size: 300px;
+.jj span:nth-child(3) {
+  font-size: 300px;
 }
 .text {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 .videopart {
-    height: 500px;
-    background-color: #E2F5FF;
+  height: 500px;
+  background-color: #e2f5ff;
+}
+
+@media (max-width: 1150px) {
+  .jj span:nth-child(3) {
+    font-size: 270px;
+  }
+}
+@media (max-width: 1100px) {
+  .jj span:nth-child(3) {
+    font-size: 210px;
+  }
+}
+@media (max-width: 850px) {
+  .headings {
+    height: 80vh;
+  }
+  .jj span:nth-child(3) {
+    font-size: 180px;
+  }
+  .jj span:first-child {
+    font-size: 240px;
+  }
+  .jj span:nth-child(2) {
+    font-size: 130px;
+  }
+}
+@media (max-width: 750px) {
+  .jj span:nth-child(3) {
+    font-size: 140px;
+  }
+  .jj span:first-child {
+    font-size: 200px;
+  }
+  .jj span:nth-child(2) {
+    font-size: 110px;
+  }
+}
+@media (max-width: 600px) {
+    .headings {
+        height: 50vh;
+    }
+  .jj span:nth-child(3) {
+    font-size: 88px;
+  }
+  .jj span:first-child {
+    font-size: 140px;
+  }
+  .jj span:nth-child(2) {
+    font-size: 80px;
+  }
 }
