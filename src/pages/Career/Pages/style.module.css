@@ -1,8 +1,5 @@
-.main {
-  height: auto;
-}
+
 .container {
-  height: auto;
   margin: 30px 50px;
   display: flex;
   gap: 20px;
@@ -75,6 +72,13 @@
     font-size: 40px;
     padding: 0 10px;
   }
+  .container .image{
+    width: 100%;
+  }
+  .container .image img {
+    height: auto;
+    object-fit: cover;
+  }
 }
 @media (max-width: 450px) {
   .container {
@@ -92,4 +96,8 @@
   .button{
     margin: 0 10px;
   }
+}
+.container .image img {
+  height: 550px;
+  object-fit: cover;
 }

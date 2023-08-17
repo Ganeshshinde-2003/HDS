@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import React from "react";
 import AnimatedComponent from "../../../components/AnimatedComponent";
+import Career from "../../../assets/Nacemos con  creatividad  ó nos volvemos creativos en el proceso_.jpg"
 
 function CareerDashboard() {
   return (
@@ -31,7 +32,9 @@ function CareerDashboard() {
               <button className={styles.button}>Search All Jobs</button>
             </a>
           </div>
-          <div className={styles.image}></div>
+          <div className={styles.image}>
+            <img src={Career} alt="APPLY FOR JOB" />
+          </div>
         </div>
       </main>
     </AnimatedComponent>

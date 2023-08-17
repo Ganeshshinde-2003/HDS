@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styles from "./style.module.css";
 import { useNavigate } from "react-router-dom";
 import AnimatedComponent from "../../components/AnimatedComponent";
@@ -16,6 +18,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function ContactUs() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,7 +29,9 @@ function ContactUs() {
   const [desc, setDesc] = useState("");
   const [isSuccessAlert, setIsSuccessAlert] = useState(false);
   const [isErrorAlert, setIsErrorAlert] = useState(false);
-  const [errormsg, setErrormsg] = useState("Submission failed. Please try again.")
+  const [errormsg, setErrormsg] = useState(
+    "Submission failed. Please try again."
+  );
 
   const navigate = useNavigate();
 
@@ -56,20 +64,20 @@ function ContactUs() {
           }, 1000);
         }, 2000);
       } else {
-        setIsErrorAlert(true)
+        setIsErrorAlert(true);
         setTimeout(() => {
           setIsErrorAlert(false);
         }, 2000);
       }
     } catch (error) {
-      setErrormsg("Network Error!")
+      setErrormsg("Network Error!");
     }
-  }
+  };
 
   return (
     <AnimatedComponent>
       <div className={styles.main}>
-        <div className={styles.container}>
+        <div data-aos="fade-up" className={styles.container}>
           <p className={styles.h1}>IT’S TIME TO CONNECT</p>
           <p className={styles.lets}>
             LET'S CHAT ABOUT
@@ -82,7 +90,7 @@ function ContactUs() {
             LET'S TALK OVER A COFFEE
           </p>
         </div>
-        <div className={styles.card}>
+        <div data-aos="fade-up" className={styles.card}>
           <form>
             <div className={styles.heading}>
               <p>Send a message</p>
@@ -129,7 +137,9 @@ function ContactUs() {
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
-            <button className={styles.button} onClick={submitData}>Send Message</button>
+            <button className={styles.button} onClick={submitData}>
+              Send Message
+            </button>
           </form>
           <div className={styles.addr}>
             <p className={styles.head}>Contact info</p>
@@ -165,19 +175,19 @@ function ContactUs() {
           </div>
         </div>
         {isSuccessAlert && (
-        <div
-          className={`${styles.alertContainer} ${styles.alertSuccess} ${styles.slideIn}`}
-        >
-          Successfully submitted!
-        </div>
-      )}
-      {isErrorAlert && (
-        <div
-          className={`${styles.alertContainer} ${styles.alertError} ${styles.slideIn}`}
-        >
-          {errormsg}
-        </div>
-      )}
+          <div
+            className={`${styles.alertContainer} ${styles.alertSuccess} ${styles.slideIn}`}
+          >
+            Successfully submitted!
+          </div>
+        )}
+        {isErrorAlert && (
+          <div
+            className={`${styles.alertContainer} ${styles.alertError} ${styles.slideIn}`}
+          >
+            {errormsg}
+          </div>
+        )}
       </div>
     </AnimatedComponent>
   );

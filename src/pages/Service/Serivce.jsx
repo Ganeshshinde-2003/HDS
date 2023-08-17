@@ -3,6 +3,8 @@ import styles from "./style.module.css";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import React from "react";
 
@@ -59,6 +61,10 @@ function Serivce() {
   }, []);
 
   useEffect(() => {
+        Aos.init({duration: 1500});
+    }, []);
+
+  useEffect(() => {
     const texts = ["HAR", "AAY"];
     const stickySection = document.querySelector(`.${styles.sticky}`);
     const scrollSection = stickySection.querySelector(
@@ -108,7 +114,7 @@ function Serivce() {
             <FontAwesomeIcon icon={faArrowDown} className={styles.arrowdown} />
           </div>
         </div>
-        <div className={styles.secpart}>
+        <div data-aos="fade-up" className={styles.secpart}>
           <div className={styles.secfirst}>
             <div className={styles.head}>BRAND IDENTITY</div>
             <div className={styles.text}>
@@ -148,7 +154,7 @@ function Serivce() {
             </div>
           </div>
         </div>
-        <div className={`${styles.secpart} ${styles.thirdpart}`}>
+        <div data-aos="fade-up" className={`${styles.secpart} ${styles.thirdpart}`}>
           <div className={styles.secfirst}>
             <div className={styles.head}>DIGITAL EXPERIENCE </div>
             <div className={styles.text}>
@@ -185,7 +191,7 @@ function Serivce() {
             </div>
           </div>
         </div>
-        <div className={`${styles.secpart} ${styles.forthpart}`}>
+        <div data-aos="fade-up" className={`${styles.secpart} ${styles.forthpart}`}>
           <div className={styles.secfirst}>
             <div className={styles.head}>STRATEGY & IDEAS</div>
             <div className={styles.text}>
@@ -223,12 +229,12 @@ function Serivce() {
             </div>
           </div>
         </div>
-        <div className={styles.stickyparent}>
+        <div data-aos="fade-up" className={styles.stickyparent}>
           <div className={styles.sticky}>
             <div className={styles.scrollsection}></div>
           </div>
         </div>
-        <div className={styles.lastpart}>
+        <div data-aos="fade-up" className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
             <br /> PROJECT ? <span>LET'S TALK ABOUT IT</span>

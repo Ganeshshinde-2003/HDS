@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <AnimatedComponent>
       <div className={styles.container}>
-        <section className={styles.text}>
+        <section data-aos="fade-up" className={styles.text}>
           <div className={styles.headingtext}>
             <p>WE ARE DISRUPTIVE!</p>
             <p>
@@ -18,7 +23,7 @@ function About() {
             </p>
           </div>
         </section>
-        <div className={styles.textincolor}>
+        <div data-aos="fade-up" className={styles.textincolor}>
           <p>
             We are connections enablers We start with people. We invest in
             discovery and understanding, ensuring our approach keeps empathy and
@@ -27,7 +32,7 @@ function About() {
             partnerships, and culture.
           </p>
         </div>
-        <section className={styles.text}>
+        <section data-aos="fade-up" className={styles.text}>
           <p className={styles.heading}>OUR PHILOSOPHY</p>
           <p>
             Understanding and empathizing is the first step to being able to
@@ -36,7 +41,7 @@ function About() {
           </p>
         </section>
         <hr />
-        <section className={styles.text}>
+        <section data-aos="fade-up" className={styles.text}>
           <p className={styles.heading}>OUR CAPABILITIES</p>
           <p>
             We design and help create brands, products, and experiences, from
@@ -44,18 +49,18 @@ function About() {
             physical.
           </p>
         </section>
-        <section className={styles.images}>
+        <section data-aos="fade-up" className={styles.images}>
           <img src={img1} alt="bakerstreet" />
         </section>
-        <div className={styles.marquee}>
+        <div data-aos="fade-up" className={styles.marquee}>
           <div className={styles.marqueediv}>
             <span>OUR PROCESS</span>
           </div>
           <div className={styles.marqueediv}>
-          <span>OUR PROCESS</span>
+            <span>OUR PROCESS</span>
           </div>
         </div>
-        <div className={`${styles.textincolor} ${styles.inwhite}`}>
+        <div data-aos="fade-up" className={`${styles.textincolor} ${styles.inwhite}`}>
           <p>
             Attention-worthy, shareable experiences don't just happen.They are
             the results of long, rocky, difficult and always inspired road to
@@ -69,7 +74,7 @@ function About() {
             worldwide and here's how we do it.
           </p>
         </div>
-        <section className={styles.textimg}>
+        <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}></div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
@@ -82,7 +87,7 @@ function About() {
             </p>
           </div>
         </section>
-        <section className={styles.textimg}>
+        <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>Market Analysis</p>
             <p>
@@ -95,7 +100,7 @@ function About() {
           </div>
           <div className={styles.image}></div>
         </section>
-        <section className={styles.textimg}>
+        <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}></div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
@@ -109,7 +114,7 @@ function About() {
             </p>
           </div>
         </section>
-        <section className={styles.textimg}>
+        <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}> Differentiate</p>
             <p>
@@ -122,7 +127,7 @@ function About() {
           </div>
           <div className={styles.image}></div>
         </section>
-        <section className={styles.textimg}>
+        <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}></div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>Proof of delivery</p>
@@ -134,7 +139,7 @@ function About() {
             </p>
           </div>
         </section>
-        <section className={styles.faqsection}>
+        <section data-aos="fade-up" className={styles.faqsection}>
           <p className={styles.faqhead}>FAQS</p>
           <div className={styles.faq}>
             <p className={styles.question}>Why go with Haraay?</p>
@@ -170,7 +175,7 @@ function About() {
             </p>
           </div>
         </section>
-        <section className={styles.contactus}>
+        <section data-aos="fade-up" className={styles.contactus}>
           <div className={styles.textpart}>
             <p>
               So, you have a project. We can take it <br />
