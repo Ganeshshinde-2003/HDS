@@ -70,7 +70,7 @@
     background-color: white;
   }
   to {
-    background-color: rgb(232, 23, 103);
+    background-color: #e5348c;
   }
 }
 .changeColorfour {
@@ -182,7 +182,7 @@
   padding: 0 5vw;
 }
 .dynamicP {
-  color: black;
+  color: #e5348c;
   font-family: Poppins;
   font-size: 500px;
   font-style: normal;

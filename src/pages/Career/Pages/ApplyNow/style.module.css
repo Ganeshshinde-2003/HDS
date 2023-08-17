@@ -9,7 +9,7 @@
     background-color: transparent;
     width: 100%;
     margin: 0 200px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 form{
@@ -19,7 +19,7 @@ form{
     gap: 40px;
 }
 input, textarea {
-    background-color: rgb(215, 212, 212);
+    background-color: rgb(246, 246, 246);
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -60,15 +60,15 @@ form .name {
   }
   .button {
     color: #fff;
-    border: 3px solid rgb(232, 23, 103);
+    border: 3px solid #e5348c;
     background-image: -webkit-linear-gradient(
       30deg,
-      rgb(232, 23, 103) 50%,
+      #e5348c 50%,
       transparent 50%
     );
     background-image: linear-gradient(
       30deg,
-      rgb(232, 23, 103) 50%,
+      #e5348c 50%,
       transparent 50%
     );
     background-size: 500px;
@@ -79,7 +79,7 @@ form .name {
   }
   .button:hover {
     background-position: 100%;
-    color: rgb(232, 23, 103);
+    color: #e5348c;
   }
 .alertContainer {
   position: fixed;
@@ -90,7 +90,7 @@ form .name {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: top 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 9999;
 }
 .alertSuccess {
@@ -120,6 +120,12 @@ form .name {
   @media (max-width: 450px){
     .resume div{
         font-size: 9px;
+    }
+    form .name{
+      gap: 5px;
+    }
+    .resume{
+      gap: 5px;
     }
     form {
         padding: 30px 10px;

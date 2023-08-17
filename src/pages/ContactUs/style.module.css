@@ -59,9 +59,9 @@
   }
   .button{
     color: #fff;
-    border: 3px solid rgb(232, 23, 103);
-    background-image: -webkit-linear-gradient(30deg, rgb(232, 23, 103) 50%, transparent 50%);
-    background-image: linear-gradient(30deg, rgb(232, 23, 103) 50%, transparent 50%);
+    border: 3px solid #e5348c;
+    background-image: -webkit-linear-gradient(30deg, #e5348c 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #e5348c 50%, transparent 50%);
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -70,7 +70,7 @@
   }
   .button:hover {
     background-position: 100%;
-    color: rgb(232, 23, 103);
+    color: #e5348c;
   }
 
   .card {
