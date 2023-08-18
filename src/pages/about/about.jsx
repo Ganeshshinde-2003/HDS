@@ -4,6 +4,9 @@ import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import img2 from "../../assets/aboutus/haraay-01-01.png"
+import img3 from "../../assets/aboutus/haraay-01-02.png"
+import img4 from "../../assets/aboutus/haraay-01-03.png"
 
 function About() {
   useEffect(() => {
@@ -75,7 +78,9 @@ function About() {
           </p>
         </div>
         <section data-aos="fade-up" className={styles.textimg}>
-          <div className={styles.image}></div>
+          <div className={styles.image}>
+            <img src={img2} alt="hdsimage" />
+          </div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
               Understanding you is important{" "}
@@ -98,10 +103,14 @@ function About() {
               audience on a deeper level.
             </p>
           </div>
-          <div className={styles.image}></div>
+          <div className={styles.image}>
+            <img src={img3} alt="hdsimage" />
+          </div> 
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
-          <div className={styles.image}></div>
+          <div className={styles.image}>
+            <img src={img4} alt="hdsimage" />
+          </div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
               Disruptive concepts that make noise

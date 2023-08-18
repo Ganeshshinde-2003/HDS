@@ -4,6 +4,7 @@
     height: auto;
     background-color: #2b2322;
     padding: 0 40px;
+    padding-bottom: 7px;
 }
 .container {
     display: flex;

@@ -184,6 +184,13 @@ function Home() {
             <p>Web development</p>
           </div>
         </section>
+        <div data-aos="fade-up" className={styles.lastpart}>
+          <p>
+            YOU HAVE A BEAUTIFUL
+            <br /> PROJECT ? <span>LET'S TALK ABOUT IT</span>
+            <br />*
+          </p>
+        </div>
       </main>
     </AnimatedComponent>
   );

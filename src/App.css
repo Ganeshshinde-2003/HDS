@@ -29,21 +29,20 @@ html{
   height: 120px;
   width: 120px;
   border: 5px solid #e5348c;
-  background-color: transparent; /* Adjust the alpha value for transparency */
+  background-color: transparent;
   mix-blend-mode: difference;
-  backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
+  backdrop-filter: blur(1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar{
   width: 10px;
-  background-color: gray;
+  background-color: #e2f5ff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #e5348c;
+  background-color: #b9ccd6;
   border-radius: 5px;
 }
-
-
 @media (max-width: 500px){
   .cursor, .cursor.text-mode {
     display: none;
