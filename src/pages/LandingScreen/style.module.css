@@ -151,3 +151,78 @@
   line-height: normal;
   padding-left: 12%;
 }
+.stickyparent2 {
+  height: 200vh;
+  background-color: #e2f5ff;
+}
+.sticky2 {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.scrollsection2 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+.dynamicP2 {
+  color: #2b2322;
+  font-family: Poppins;
+  font-size: 300px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  padding-left: 30%;
+}
+
+.section{
+  padding: 0 40px;
+  height: 750px;
+  display: flex;
+  gap: 40px;
+  text-align: left;
+}
+.section div:nth-child(2) {
+  align-self: flex-end;
+  text-align: right;
+}
+.section .head, .section3 .head {
+  font-size: 20px;
+  font-weight: bold;
+}
+.section2{
+  height: 500px;
+}
+.section3{
+  padding: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.singleimg {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+.singleimg img {
+  width: 100%;
+}
+.button {
+  color: black;
+  bottom: 10%;
+  left: 5%;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+}
