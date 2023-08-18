@@ -34,6 +34,16 @@ html{
   backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: gray;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e5348c;
+  border-radius: 5px;
+}
+
+
 @media (max-width: 500px){
   .cursor, .cursor.text-mode {
     display: none;
