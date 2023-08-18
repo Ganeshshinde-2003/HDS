@@ -18,7 +18,7 @@
 
 .headings {
   margin-top: 40px;
-  height: 130vh;
+  height: 150vh;
   position: relative;
   padding: 30px;
   background: radial-gradient(circle, lighten(#2b2322, 5%) 15%, #2b2322);
@@ -55,7 +55,7 @@
   margin-bottom: 30px;
 }
 .jj span:first-child {
-  font-size: 500px;
+  font-size: 550px;
 }
 .jj span:nth-child(2) {
   font-size: 150px;
