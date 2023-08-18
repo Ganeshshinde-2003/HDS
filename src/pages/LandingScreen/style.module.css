@@ -76,10 +76,16 @@
   .jj span:nth-child(3) {
     font-size: 270px;
   }
+  .jj span:first-child {
+    font-size: 450px;
+  }
 }
 @media (max-width: 1100px) {
   .jj span:nth-child(3) {
     font-size: 210px;
+  }
+  .jj span:first-child {
+    font-size: 400px;
   }
 }
 @media (max-width: 850px) {
@@ -90,7 +96,7 @@
     font-size: 180px;
   }
   .jj span:first-child {
-    font-size: 240px;
+    font-size: 300px;
   }
   .jj span:nth-child(2) {
     font-size: 130px;
@@ -129,7 +135,7 @@
   overflow: hidden;
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 50vh;
 }
 .scrollsection {
   position: absolute;
@@ -159,7 +165,7 @@
   overflow: hidden;
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 50vh;
 }
 .scrollsection2 {
   position: absolute;
@@ -179,7 +185,7 @@
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
-  padding-left: 30%;
+  padding-left: 12%;
 }
 
 .section{
@@ -207,6 +213,7 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
+  padding: 0 40px;
 }
 .singleimg {
   width: 50%;
@@ -225,4 +232,76 @@
   border: 2px solid black;
   border-radius: 50px;
   cursor: pointer;
+}
+.identity {
+  background-color: #e2f5ff;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.identity .head {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.identity p {
+  font-weight: bold;
+}
+@media (max-width: 1100px){
+  .dynamicP{
+    font-size: 200px;
+  }
+}
+@media (max-width: 1000px){
+  .section{
+    height: 500px;
+  }
+}
+@media (max-width: 800px){
+  .dynamicP{
+    font-size: 160px;
+  }
+  .dynamicP2{
+    font-size: 206px;
+  }
+  .section{
+    height: 300px;
+  }
+  .identity{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 450px){
+  .dynamicP{
+    font-size: 100px;
+  }
+  .dynamicP2{
+    font-size: 130px;
+  }
+  .section{
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .identity{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 20px;
+  }
+  .section, .section3{
+    padding: 0 20px;
+  }
+  .singleimg{
+    width: auto;
+  }
+  .sticky2, .sticky{
+    height: 30vh;
+  }
 }

@@ -155,6 +155,35 @@ function Home() {
             <div className={styles.scrollsection2}></div>
           </div>
         </div>
+        <section className={styles.identity}>
+          <div>
+            <p className={styles.head}>STRATEGY & IDEAS</p>
+            <p>Positioning</p>
+            <p>Brand Strategy</p>
+            <p>Brand Platform</p>
+            <p>Digital strategy</p>
+            <p>Social Strategy</p>
+            <p>Content Marketing</p>
+          </div>
+          <div>
+            <p className={styles.head}>BRAND IDENTITY</p>
+            <p>Logo</p>
+            <p>Graphic identity</p>
+            <p>graphical charter</p>
+            <p>Editorial charter</p>
+            <p>Content creation</p>
+            <p>Social media guidelines</p>
+          </div>
+          <div>
+            <p className={styles.head}>DIGITAL EXPERIENCE</p>
+            <p>UI / UX design</p>
+            <p>Audit and UX design</p>
+            <p>Showcase site</p>
+            <p>E-commerce site</p>
+            <p>Web application</p>
+            <p>Web development</p>
+          </div>
+        </section>
       </main>
     </AnimatedComponent>
   );
