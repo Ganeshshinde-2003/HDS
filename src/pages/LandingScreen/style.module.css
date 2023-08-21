@@ -151,7 +151,7 @@
 .dynamicP {
   color: #2b2322;
   font-family: Poppins;
-  font-size: 300px;
+  font-size: 320px;
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
@@ -181,7 +181,7 @@
 .dynamicP2 {
   color: #2b2322;
   font-family: Poppins;
-  font-size: 300px;
+  font-size: 400px;
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
@@ -214,6 +214,7 @@
   justify-content: center;
   gap: 50px;
   padding: 0 40px;
+  margin-bottom: 40px;
 }
 .singleimg {
   width: 50%;
@@ -256,7 +257,7 @@
   align-items: center;
   justify-content: center;
 }
-.lastpart p {
+.lastpart p, .lastpart p span {
   color: #000;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -267,11 +268,15 @@
 
 .lastpart p span {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 1100px){
   .dynamicP{
     font-size: 200px;
+  }
+  .dynamicP2{
+    font-size: 300px;
   }
 }
 @media (max-width: 1000px){

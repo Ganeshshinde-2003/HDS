@@ -124,33 +124,33 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Visual identity</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand strategy</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Packaging Design</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Print visuals</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand audit</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>
                   Messaging & tone of voice
                 </button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Brand launch</button>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -166,28 +166,28 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>UI / UX Design</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Audit & UX Design</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Design System</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Showcase Site</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>E-Commerce site</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Web Development</button>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -204,28 +204,28 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Target Scan</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Positioning</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Brand Platform</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Social Strategy</button>
-              </a>
+              
             </div>
             <div className={styles.buttonRow}>
-              <a href="/">
+
                 <button className={styles.button}>Content Strategy</button>
-              </a>
-              <a href="/">
+              
+
                 <button className={styles.button}>Digital Strategy</button>
-              </a>
+              
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@ function Serivce() {
         <div data-aos="fade-up" className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
-            <br /> PROJECT ? <span>LET'S TALK ABOUT IT</span>
+            <br /> PROJECT ? <a href="/contactus"><span>LET'S TALK ABOUT IT</span></a>
             <br />*
           </p>
         </div>

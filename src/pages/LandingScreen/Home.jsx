@@ -115,7 +115,9 @@ function Home() {
         </div>
         <section data-aos="fase-up" className={styles.section}>
           <div className={styles.img}>
-            <img src={Serene} alt="sereneskin" />
+            <a href="/works/sereneskin">
+              <img src={Serene} alt="sereneskin" />
+            </a>
             <p className={styles.head}>Serene Skin</p>
             <p>Brand Identity | Packaging </p>
           </div>
@@ -130,19 +132,25 @@ function Home() {
           className={`${styles.section} ${styles.section2}`}
         >
           <div className={styles.img}>
-            <img src={Radmedia} alt="radmedia" />
+            <a href="/works/radmedia">
+              <img src={Radmedia} alt="radmedia" />
+            </a>
             <p className={styles.head}>Rad Media</p>
             <p>Brand Identity | Brand Strategy </p>
           </div>
           <div className={styles.img}>
-            <img src={Creamforest} alt="creamforest" />
+            <a href="/works/creamforest">
+              <img src={Creamforest} alt="creamforest" />
+            </a>
             <p className={styles.head}>Cream Forest</p>
             <p>Brand Identity | Packaging </p>
           </div>
         </section>
         <section data-aos="fase-up" className={styles.section3}>
           <div className={styles.singleimg}>
-            <img src={Atmabodh} alt="athmabodh" />
+            <a href="/works/atmabodh">
+              <img src={Atmabodh} alt="athmabodh" />
+            </a>
             <p className={styles.head}>Atmabodh</p>
             <p>Brand Identity | Packaging </p>
           </div>
@@ -187,7 +195,10 @@ function Home() {
         <div data-aos="fade-up" className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
-            <br /> PROJECT ? <span>LET'S TALK ABOUT IT</span>
+            <br /> PROJECT ?{" "}
+            <a href="/contactus">
+              <span>LET'S TALK ABOUT IT</span>
+            </a>
             <br />*
           </p>
         </div>
