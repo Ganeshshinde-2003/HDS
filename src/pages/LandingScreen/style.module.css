@@ -286,7 +286,7 @@
   .lastpart{
     height: auto;
   }
-  .lastpart p {
+  .lastpart p , .lastpart p span{
     font-size: 45px;
   }
 }
@@ -334,7 +334,7 @@
   .sticky2, .sticky{
     height: 30vh;
   }
-  .lastpart p {
+  .lastpart p, .lastpart p span {
     font-size: 28px;
     padding: 20px;
   }
