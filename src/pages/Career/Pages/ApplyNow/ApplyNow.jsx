@@ -32,7 +32,7 @@ function ApplyNow() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://hds-backend.onrender.com/api/application", {
+      const response = await fetch("https://hds-backend-server.onrender.com/api/application", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -47,7 +47,7 @@ function ContactUs() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://hds-backend.onrender.com/api/contact", {
+      const response = await fetch("https://hds-backend-server.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
