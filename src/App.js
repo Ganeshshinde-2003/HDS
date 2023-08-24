@@ -22,6 +22,7 @@ import CareerDashboard from "./pages/Career/Pages/Dashboard";
 import Alljobs from "./pages/Career/Pages/AllJobs/Alljobs";
 import ApplyNow from "./pages/Career/Pages/ApplyNow/ApplyNow";
 import Home from "./pages/LandingScreen/Home";
+import Purus from "./pages/CaseStudies/Purus/Purus";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -89,6 +90,7 @@ function App() {
             <Route path="/works/pawpet" element={<PawPet />} />
             <Route path="/works/culinary" element={<Culinary />} />
             <Route path="/works/atmabodh" element={<Atmabodh />} />
+            <Route path="/works/purus" element={<Purus />} />
           </Routes>
         </AnimatePresence>
         <Footer /> 
