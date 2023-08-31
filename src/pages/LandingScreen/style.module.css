@@ -237,6 +237,7 @@
 .identity {
   background-color: #e2f5ff;
   margin-top: -20px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
