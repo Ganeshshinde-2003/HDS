@@ -48,7 +48,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <p className={styles.copy}>©2023 Copyright Haraay Design Studio LLP</p>
+      <p className={styles.copy}>© 2023 All Rights Reserved Haraay Design Studio LLP</p>
     </div>
   );
 }

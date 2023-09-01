@@ -46,31 +46,37 @@ function ContactUs() {
   const submitData = async (e) => {
     e.preventDefault();
 
+    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || number.trim() === '') {
+      setErrormsg("Please fill in all required fields.");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
+      return;
+    }
+
     try {
-      const response = await fetch("https://hds-backend-server.onrender.com/api/contact", {
+      await fetch("https://hds-backend-server.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-
-      if (response.ok) {
-        setIsSuccessAlert(true);
+      setIsSuccessAlert(true);
+      setTimeout(() => {
+        setIsSuccessAlert(false);
         setTimeout(() => {
-          setIsSuccessAlert(false);
-          setTimeout(() => {
-            navigate("/");
-          }, 500);
-        }, 2000);
-      } else {
-        setIsErrorAlert(true);
-        setTimeout(() => {
-          setIsErrorAlert(false);
-        }, 2000);
-      }
+          navigate("/");
+          window.scrollTo(0, 0);
+        }, 1000);
+      }, 2000);
     } catch (error) {
       setErrormsg("Network Error!");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
     }
   };
 

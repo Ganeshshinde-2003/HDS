@@ -177,7 +177,7 @@ function About() {
             </p>
             <p className={styles.ans}>
               We help small and medium brands in USA, Los Angeles, Chicago,
-              London, Dubai, Sydney, Melbourne, Mumbai, Australia Delhi,
+              London, Dubai, Sydney, Melbourne, Mumbai, Australia, Delhi,
               Bangalore and Pan India. We work with B2B, B2C and digital
               businesses across Technology, FMCG, E-commerce, Health and
               Wellness, Fashion, Beauty, Lifestyle and Entertainment.

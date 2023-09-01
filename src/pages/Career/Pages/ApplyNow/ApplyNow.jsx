@@ -31,31 +31,37 @@ function ApplyNow() {
   const submitData = async (e) => {
     e.preventDefault();
 
+    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || number.trim() === '' || resume.trim() === '' || portfolio.trim() === '') {
+      setErrormsg("Please fill in all required fields.");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
+      return;
+    }
+
     try {
-      const response = await fetch("https://hds-backend-server.onrender.com/api/application", {
+      await fetch("https://hds-backend-server.onrender.com/api/application", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-
-      if (response.ok) {
         setIsSuccessAlert(true);
         setTimeout(() => {
           setIsSuccessAlert(false);
           setTimeout(() => {
             navigate("/about");
+            window.scrollTo(0, 0);
           }, 1000);
         }, 2000);
-      } else {
-        setIsErrorAlert(true);
-        setTimeout(() => {
-          setIsErrorAlert(false);
-        }, 2000);
-      }
     } catch (error) {
       setErrormsg("Network Error!");
+      setIsErrorAlert(true);
+      setTimeout(() => {
+        setIsErrorAlert(false);
+      }, 2000);
     }
   };
 
