@@ -61,7 +61,7 @@ function ContactUs() {
           setIsSuccessAlert(false);
           setTimeout(() => {
             navigate("/");
-          }, 1000);
+          }, 500);
         }, 2000);
       } else {
         setIsErrorAlert(true);
