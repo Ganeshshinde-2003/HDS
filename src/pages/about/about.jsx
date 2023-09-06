@@ -4,9 +4,11 @@ import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import img2 from "../../assets/aboutus/haraay-01-01.png"
-import img3 from "../../assets/aboutus/haraay-01-02.png"
-import img4 from "../../assets/aboutus/haraay-01-03.png"
+import img2 from "../../assets/aboutus/haraay-understanding you.png"
+import img3 from "../../assets/aboutus/haraay-market analysis.png"
+import img4 from "../../assets/aboutus/haraay-01.png"
+import img5 from "../../assets/aboutus/haraay-02.png"
+import img6 from "../../assets/aboutus/haraay-proof of delivery.png"
 
 function About() {
   useEffect(() => {
@@ -134,10 +136,10 @@ function About() {
               clients.
             </p>
           </div>
-          <div className={styles.image}></div>
+          <div className={styles.image}><img src={img5} alt="hdsimage" /></div>
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
-          <div className={styles.image}></div>
+          <div className={styles.image}><img src={img6} alt="hdsimage" /></div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>Proof of delivery</p>
             <p>
