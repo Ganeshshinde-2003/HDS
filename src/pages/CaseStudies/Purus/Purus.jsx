@@ -21,13 +21,7 @@ function Purus() {
             <p>Shaping Spaces</p>
           </div>
           <div className={styles.imgcontainer}>
-          <video
-              src={videoFile}
-              autoPlay
-              controls
-              loop
-              playsInline
-            >
+            <video src={videoFile} autoPlay controls loop playsInline>
               Your browser does not support the vedio tag.
             </video>
           </div>
@@ -71,15 +65,15 @@ function Purus() {
           <img src={img6} alt="PURUS" />
         </section>
         <div className={styles.headings}>
-            <p>Toot</p>
-            <p>Toothpaste for kids</p>
-          </div>
-          <div className={styles.last}>
-            <img src={img7} alt="TOOT" />
-            <a href="/works/toot">
-              <button className={styles.button}>View Case Study</button>
-            </a>
-          </div>
+          <p>Toot</p>
+          <p>Toothpaste for kids</p>
+        </div>
+        <div className={styles.last}>
+          <img src={img7} alt="TOOT" />
+          <a href="/works/toot">
+            <button className={styles.button}>View Case Study</button>
+          </a>
+        </div>
       </main>
     </AnimatedComponent>
   );

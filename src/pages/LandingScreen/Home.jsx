@@ -122,13 +122,7 @@ function Home() {
             <p>Brand Identity | Packaging </p>
           </div>
           <div className={`${styles.img} ${styles.videotag}`}>
-            <video
-              src={videoFile}
-              autoPlay
-              controls
-              loop
-              playsInline
-            >
+            <video src={videoFile} autoPlay controls loop playsInline>
               Your browser does not support the vedio tag.
             </video>
             <p className={styles.head}>Puru’s Enterprise</p>
