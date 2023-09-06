@@ -187,7 +187,13 @@
   line-height: normal;
   padding-left: 12%;
 }
-
+.section video{
+  border-radius: 10px;
+  width: 100%;
+}
+.videotag{
+  width: 70%;
+}
 .section{
   padding: 0 40px;
   height: 750px;
@@ -308,7 +314,10 @@
     padding-left: 100px;
   }
 }
-@media (max-width: 450px){
+@media (max-width: 500px){
+  .videotag{
+    width: 100%;
+  }
   .dynamicP{
     font-size: 100px;
   }

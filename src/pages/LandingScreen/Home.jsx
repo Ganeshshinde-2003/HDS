@@ -5,10 +5,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import Serene from "../../assets/casestudies/SereneSkin/bottel 15 1.png";
-import purus from "../../assets/casestudies/purus/2 33.png";
 import Radmedia from "../../assets/casestudies/RadMedia/Duct_Tape_Mockup_ everywhere 1.png";
 import Creamforest from "../../assets/casestudies/CreamForest/Random Ice Cream Cups Mockup 1 (1).png";
 import Atmabodh from "../../assets/casestudies/Atmabodh/18728358 1.png";
+import videoFile from "../../assets/Comp 2.MP4";
 
 function Home() {
   useEffect(() => {
@@ -121,8 +121,16 @@ function Home() {
             <p className={styles.head}>Serene Skin</p>
             <p>Brand Identity | Packaging </p>
           </div>
-          <div className={styles.img}>
-            <img src={purus} alt="purus" />
+          <div className={`${styles.img} ${styles.videotag}`}>
+            <video
+              src={videoFile}
+              autoPlay
+              controls
+              loop
+              playsInline
+            >
+              Your browser does not support the vedio tag.
+            </video>
             <p className={styles.head}>Puru’s Enterprise</p>
             <p>Brand Identity | Packaging | Website </p>
           </div>
