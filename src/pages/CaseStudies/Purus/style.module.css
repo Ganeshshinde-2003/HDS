@@ -1,7 +1,7 @@
 .mainpart {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .headings {
   margin-left: 50px;
