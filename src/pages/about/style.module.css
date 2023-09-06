@@ -13,17 +13,27 @@
   padding: 45px 40px;
 }
 .headingtext {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
+.headingtextimage{
+  width: 50%;
+}
+.headingtextimage img{
+  width: 100%;
+}
 .text .headingtext p:first-child {
-  font-size: 50px;
+  width: 100%;
+  font-size: 60px;
   font-weight: bold;
   text-decoration: underline;
 }
 .headingtext p:nth-child(2) {
-  font-size: 30px;
+  width: 100%;
+  font-size: 35px;
   font-weight: normal;
 }
 .text p:first-child {
@@ -31,6 +41,11 @@
 }
 .text p {
   width: 50%;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heading::after {
   content: "";
@@ -50,6 +65,14 @@
   padding: 60px 120px;
   background-color: black;
   color: white;
+}
+.imagemain{
+  height: 600px;
+  width: 100%;
+}
+.imageone{
+  height: 400px;
+  width: 100%;
 }
 .textpart {
   display: flex;
@@ -194,7 +217,17 @@
     flex-direction: column;
     gap: 10px;
   }
+  .imagemain{
+    height: 500px;
+    width: 100%;
+  }
   .text p {
+    width: 100%;
+  }
+  .headingtext{
+    width: 100%;
+  }
+  .headingtextimage{
     width: 100%;
   }
   .headingtext p:first-child {

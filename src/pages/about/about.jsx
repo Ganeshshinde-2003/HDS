@@ -9,6 +9,7 @@ import img3 from "../../assets/aboutus/haraay-market analysis.png"
 import img4 from "../../assets/aboutus/haraay-01.png"
 import img5 from "../../assets/aboutus/haraay-02.png"
 import img6 from "../../assets/aboutus/haraay-proof of delivery.png"
+import mainImage from "../../assets/aboutus/3.png"
 
 function About() {
   useEffect(() => {
@@ -26,6 +27,9 @@ function About() {
               the dots, to think and breathe design, to be strategists and
               storytellers... To go further.
             </p>
+          </div>
+          <div className={styles.headingtextimage}>
+            <img src={mainImage} alt="mainImage" />
           </div>
         </section>
         <div data-aos="fade-up" className={styles.textincolor}>
@@ -81,7 +85,7 @@ function About() {
         </div>
         <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}>
-            <img src={img2} alt="hdsimage" />
+            <img src={img2} alt="hdsimage" className={styles.imagemain} />
           </div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
@@ -106,12 +110,12 @@ function About() {
             </p>
           </div>
           <div className={styles.image}>
-            <img src={img3} alt="hdsimage" />
+            <img src={img3} alt="hdsimage" className={styles.imageone} />
           </div> 
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}>
-            <img src={img4} alt="hdsimage" />
+            <img src={img4} alt="hdsimage" className={styles.imageone} />
           </div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>
@@ -136,7 +140,7 @@ function About() {
               clients.
             </p>
           </div>
-          <div className={styles.image}><img src={img5} alt="hdsimage" /></div>
+          <div className={styles.image}><img src={img5} alt="hdsimage" className={styles.imageone} /></div>
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}><img src={img6} alt="hdsimage" /></div>
