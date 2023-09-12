@@ -7,6 +7,7 @@ import img3 from "../../../assets/casestudies/Culinary/Screenshot 2023-08-11 at 
 import img4 from "../../../assets/casestudies/Culinary/Screenshot 2023-08-11 at 11.02 1.png";
 import img5 from "../../../assets/casestudies/Culinary/Screenshot 2023-08-11 at 9.49 (2).png";
 import img6 from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
+import { Link } from "react-router-dom";
 
 function Culinary() {
   return (
@@ -48,9 +49,9 @@ function Culinary() {
               src={img6}
               alt="PawPet"
             />
-            <a href="/works/pawpet">
+            <Link to="/works/pawpet">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

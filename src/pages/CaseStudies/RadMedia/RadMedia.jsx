@@ -20,6 +20,7 @@ import img18 from "../../../assets/casestudies/RadMedia/image11 (1).jpeg"
 import img19 from "../../../assets/casestudies/RadMedia/Artboard 1@4x-100 (2) 1.png"
 import img20 from "../../../assets/casestudies/RadMedia/jocelyn-morales-qqIj5pV48-s-unsplash (1) 1 (1).png"
 import AnimatedComponent from "../../../components/AnimatedComponent"
+import { Link } from "react-router-dom";
 
 function RadMedia() {
   return (
@@ -184,9 +185,9 @@ function RadMedia() {
               src={img20}
               alt="Serene SKin"
             />
-            <a href="/works/sereneskin">
+            <Link to="/works/sereneskin">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

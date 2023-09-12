@@ -15,6 +15,7 @@ import img14 from "../../../assets/casestudies/bakerstreet/Artboard 23-100.jpg";
 import img15 from "../../../assets/casestudies/bakerstreet/Artboard 1@4x-100 (1) 2.png";
 import videoFile from "../../../assets/casestudies/bakerstreet/Screen Recording 2023-07-04 at 10.48.08 AM.mov";
 import AnimatedComponent from "../../../components/AnimatedComponent";
+import { Link } from "react-router-dom";
 
 function BakersStreet() {
   return (
@@ -131,9 +132,9 @@ function BakersStreet() {
         </div>
         <div className={styles.last}>
           <img src={img15} alt="RAD Media" />
-          <a href="/works/radmedia">
+          <Link to="/works/radmedia">
             <button className={styles.button}>View Case Study</button>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/images/HDSlogo.png";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [display, setDisplay] = useState(
@@ -17,22 +18,24 @@ function Navbar() {
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <a href="/"><img src={Logo} alt="HDSLLP" className={styles.logo} /></a>
+          <Link to="/">
+            <img src={Logo} alt="HDSLLP" className={styles.logo} />
+          </Link>
         </div>
         <div
           className={styles.secdev}
           style={{ display: display ? "flex" : "none" }}
         >
           <div className={styles.navigation}>
-            <a href="/works">Work</a>
-            <a href="/expertise">Expertise</a>
-            <a href="/about">About Haraay</a>
-            <a href="/careerdashboard">Careers</a>
+            <Link to="/works">Work</Link>
+            <Link to="/expertise">Expertise</Link>
+            <Link to="/about">About Haraay</Link>
+            <Link to="/careerdashboard">Careers</Link>
           </div>
           <div>
-            <a href="/contactus">
+            <Link to="/contactus">
               <button className={styles.contact}>Contact us</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

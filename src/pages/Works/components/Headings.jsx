@@ -1,4 +1,5 @@
 import styles from "./style.module.css"
+import { Link } from "react-router-dom";
 
 export default function Headings() {
   return (
@@ -6,13 +7,13 @@ export default function Headings() {
         <p className={styles.p}>Work</p>
         <div className={styles.navigation}>
             <button className={styles.button}>
-                <a href="/" className={styles.a}>All Works</a>
+                <Link to="/" className={styles.a}>All Works</Link>
             </button>
             <button className={styles.button}>
-                <a href="/" className={styles.a}>Branding</a>
+                <Link to="/" className={styles.a}>Branding</Link>
             </button>
             <button className={styles.button}>
-                <a href="/" className={styles.a}>Website</a>
+                <Link to="/" className={styles.a}>Website</Link>
             </button>
         </div>
     </div>

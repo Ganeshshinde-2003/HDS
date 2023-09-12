@@ -10,6 +10,7 @@ import img7 from "../../../assets/casestudies/toot/TOOT 1.png";
 import img8 from "../../../assets/casestudies/purus/11 (1)-min 1.png";
 import img9 from "../../../assets/casestudies/purus/12 (1)-min 1.png";
 import videoFile from "../../../assets/Comp 2.MP4";
+import { Link } from "react-router-dom";
 
 function Purus() {
   return (
@@ -70,9 +71,9 @@ function Purus() {
         </div>
         <div className={styles.last}>
           <img src={img7} alt="TOOT" />
-          <a href="/works/toot">
+          <Link to="/works/toot">
             <button className={styles.button}>View Case Study</button>
-          </a>
+          </Link>
         </div>
       </main>
     </AnimatedComponent>

@@ -12,6 +12,7 @@ import img8 from "../../../assets/casestudies/pawpets/Artboard 1.png";
 import img9 from "../../../assets/casestudies/pawpets/Open-Magazine-Mockup-min.jpg";
 import img10 from "../../../assets/casestudies/pawpets/Free A4 Magazine Mockup-min.jpg";
 import img11 from "../../../assets/casestudies/thestone/31_May_09 (1)-min-min 1.png";
+import { Link } from "react-router-dom";
 
 function PawPet() {
   return (
@@ -79,9 +80,9 @@ function PawPet() {
               src={img11}
               alt="TheStone"
             />
-            <a href="/works/thestone">
+            <Link to="/works/thestone">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

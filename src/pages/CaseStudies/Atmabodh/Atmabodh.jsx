@@ -10,6 +10,7 @@ import img6 from "../../../assets/casestudies/Atmabodh/Artboard 2@4x-100 1.png";
 import img7 from "../../../assets/casestudies/Atmabodh/Landing page - ATMABODH 1.png";
 import img8 from "../../../assets/casestudies/Atmabodh/About atmabodh - final 1.png";
 import img9 from "../../../assets/images/Culinary .jpg";
+import { Link } from "react-router-dom";
 
 function Atmabodh() {
   return (
@@ -93,9 +94,9 @@ function Atmabodh() {
           </div>
           <div className={styles.last}>
             <img src={img9} alt="Culinary" />
-            <a href="/works/culinary">
+            <Link to="/works/culinary">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

@@ -3,7 +3,7 @@ import AnimatedComponent from "../../components/AnimatedComponent";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { Link } from "react-router-dom";
 import Serene from "../../assets/casestudies/SereneSkin/bottel 15 1.png";
 import Radmedia from "../../assets/casestudies/RadMedia/Duct_Tape_Mockup_ everywhere 1.png";
 import Creamforest from "../../assets/casestudies/CreamForest/Random Ice Cream Cups Mockup 1 (1).png";
@@ -115,9 +115,9 @@ function Home() {
         </div>
         <section data-aos="fase-up" className={styles.section}>
           <div className={styles.img}>
-            <a href="/works/sereneskin">
+            <Link to="/works/sereneskin">
               <img src={Serene} alt="sereneskin" />
-            </a>
+            </Link>
             <p className={styles.head}>Serene Skin</p>
             <p>Brand Identity | Packaging </p>
           </div>
@@ -134,31 +134,31 @@ function Home() {
           className={`${styles.section} ${styles.section2}`}
         >
           <div className={styles.img}>
-            <a href="/works/radmedia">
+            <Link to="/works/radmedia">
               <img src={Radmedia} alt="radmedia" />
-            </a>
+            </Link>
             <p className={styles.head}>Rad Media</p>
             <p>Brand Identity | Brand Strategy </p>
           </div>
           <div className={styles.img}>
-            <a href="/works/creamforest">
+            <Link to="/works/creamforest">
               <img src={Creamforest} alt="creamforest" />
-            </a>
+            </Link>
             <p className={styles.head}>Cream Forest</p>
             <p>Brand Identity | Packaging </p>
           </div>
         </section>
         <section data-aos="fase-up" className={styles.section3}>
           <div className={styles.singleimg}>
-            <a href="/works/atmabodh">
+            <Link to="/works/atmabodh">
               <img src={Atmabodh} alt="athmabodh" />
-            </a>
+            </Link>
             <p className={styles.head}>Atmabodh</p>
             <p>Brand Identity | Packaging </p>
           </div>
-          <a href="/works">
+          <Link to="/works">
             <button className={styles.button}>DISCOVER ALL OUR PROJECTS</button>
-          </a>
+          </Link>
         </section>
         <div data-aos="fade-up" className={styles.stickyparent2}>
           <div className={styles.sticky2}>
@@ -198,9 +198,9 @@ function Home() {
           <p>
             YOU HAVE A BEAUTIFUL
             <br /> PROJECT ?{" "}
-            <a href="/contactus">
+            <Link to="/contactus">
               <span>LET'S TALK ABOUT IT</span>
-            </a>
+            </Link>
             <br />*
           </p>
         </div>

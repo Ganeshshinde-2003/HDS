@@ -11,6 +11,7 @@ import img7 from "../../../assets/casestudies/thestone/Slice 3 1.png";
 import img8 from "../../../assets/casestudies/thestone/Slice 1 1.png";
 import img9 from "../../../assets/casestudies/thestone/Slice (2) 1.png";
 import img10 from "../../../assets/casestudies/toot/TOOT 1.png";
+import { Link } from "react-router-dom";
 
 function Stone() {
   return (
@@ -85,9 +86,9 @@ function Stone() {
               src={img10}
               alt="Toot"
             />
-            <a href="/works/toot">
+            <Link to="/works/toot">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

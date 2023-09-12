@@ -4,8 +4,8 @@ import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Aos from "aos";
-import "aos/dist/aos.css"
-
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 import React from "react";
 
 function Serivce() {
@@ -61,8 +61,8 @@ function Serivce() {
   }, []);
 
   useEffect(() => {
-        Aos.init({duration: 1500});
-    }, []);
+    Aos.init({ duration: 1500 });
+  }, []);
 
   useEffect(() => {
     const texts = ["HAR", "AAY"];
@@ -124,37 +124,30 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Visual identity</button>
 
-                <button className={styles.button}>Visual identity</button>
-              
+              <button className={styles.button}>Brand strategy</button>
 
-                <button className={styles.button}>Brand strategy</button>
-              
-
-                <button className={styles.button}>Packaging Design</button>
-              
+              <button className={styles.button}>Packaging Design</button>
             </div>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Print visuals</button>
 
-                <button className={styles.button}>Print visuals</button>
-              
-
-                <button className={styles.button}>Brand audit</button>
-              
+              <button className={styles.button}>Brand audit</button>
             </div>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>
+                Messaging & tone of voice
+              </button>
 
-                <button className={styles.button}>
-                  Messaging & tone of voice
-                </button>
-              
-
-                <button className={styles.button}>Brand launch</button>
-              
+              <button className={styles.button}>Brand launch</button>
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className={`${styles.secpart} ${styles.thirdpart}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.secpart} ${styles.thirdpart}`}
+        >
           <div className={styles.secfirst}>
             <div className={styles.head}>DIGITAL EXPERIENCE </div>
             <div className={styles.text}>
@@ -166,32 +159,26 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>UI / UX Design</button>
 
-                <button className={styles.button}>UI / UX Design</button>
-              
+              <button className={styles.button}>Audit & UX Design</button>
 
-                <button className={styles.button}>Audit & UX Design</button>
-              
-
-                <button className={styles.button}>Design System</button>
-              
+              <button className={styles.button}>Design System</button>
             </div>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Showcase Site</button>
 
-                <button className={styles.button}>Showcase Site</button>
-              
-
-                <button className={styles.button}>E-Commerce site</button>
-              
+              <button className={styles.button}>E-Commerce site</button>
             </div>
             <div className={styles.buttonRow}>
-
-                <button className={styles.button}>Web Development</button>
-              
+              <button className={styles.button}>Web Development</button>
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className={`${styles.secpart} ${styles.forthpart}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.secpart} ${styles.forthpart}`}
+        >
           <div className={styles.secfirst}>
             <div className={styles.head}>STRATEGY & IDEAS</div>
             <div className={styles.text}>
@@ -204,28 +191,19 @@ function Serivce() {
           </div>
           <div className={styles.buttonspart}>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Target Scan</button>
 
-                <button className={styles.button}>Target Scan</button>
-              
-
-                <button className={styles.button}>Positioning</button>
-              
+              <button className={styles.button}>Positioning</button>
             </div>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Brand Platform</button>
 
-                <button className={styles.button}>Brand Platform</button>
-              
-
-                <button className={styles.button}>Social Strategy</button>
-              
+              <button className={styles.button}>Social Strategy</button>
             </div>
             <div className={styles.buttonRow}>
+              <button className={styles.button}>Content Strategy</button>
 
-                <button className={styles.button}>Content Strategy</button>
-              
-
-                <button className={styles.button}>Digital Strategy</button>
-              
+              <button className={styles.button}>Digital Strategy</button>
             </div>
           </div>
         </div>
@@ -237,7 +215,10 @@ function Serivce() {
         <div data-aos="fade-up" className={styles.lastpart}>
           <p>
             YOU HAVE A BEAUTIFUL
-            <br /> PROJECT ? <a href="/contactus"><span>LET'S TALK ABOUT IT</span></a>
+            <br /> PROJECT ?{" "}
+            <Link to="/contactus">
+              <span>LET'S TALK ABOUT IT</span>
+            </Link>
             <br />*
           </p>
         </div>

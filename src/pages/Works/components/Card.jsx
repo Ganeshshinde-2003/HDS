@@ -12,6 +12,7 @@ import CreamForest from "../../../assets/images/creameforest.png";
 import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function Card() {
   useEffect(() => {
@@ -26,9 +27,9 @@ export default function Card() {
           <p>Branding | Website</p>
         </div>
         <img src={Serene} alt="SereneSkin" />
-        <a href="/works/sereneskin">
+        <Link to="/works/sereneskin">
           <button className={styles.casebutton}>View Case Study</button>
-        </a>
+        </Link>
       </div>
       <div data-aos="fade-up" className={styles.doublecard}>
         <div className={styles.case}>
@@ -37,9 +38,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={BakerStreet} alt="SereneSkin" />
-          <a href="/works/bakerstreet">
+          <Link to="/works/bakerstreet">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
@@ -47,14 +48,14 @@ export default function Card() {
             <p style={{ color: "white" }}>Branding | Website</p>
           </div>
           <img src={RadMedia} alt="SereneSkin" />
-          <a href="/works/radmedia">
+          <Link to="/works/radmedia">
             <button
               className={styles.casebutton}
               style={{ border: "2px solid white", color: "white" }}
             >
               View Case Study
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div data-aos="fade-up" className={styles.doublecard}>
@@ -64,9 +65,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={AthmaBodhana} alt="SereneSkin" />
-          <a href="/works/atmabodh">
+          <Link to="/works/atmabodh">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
@@ -74,9 +75,9 @@ export default function Card() {
             <p>Branding</p>
           </div>
           <img src={Culinary} alt="SereneSkin" />
-          <a href="/works/culinary">
+          <Link to="/works/culinary">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
       </div>
       <div data-aos="fade-up" className={styles.thirdcard}>
@@ -86,9 +87,9 @@ export default function Card() {
             <p>Branding</p>
           </div>
           <img src={PawPet} alt="SereneSkin" />
-          <a href="/works/pawpet">
+          <Link to="/works/pawpet">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.casestudy}>
           <div className={styles.text}>
@@ -96,9 +97,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Stone} alt="SereneSkin" />
-          <a href="/works/thestone">
+          <Link to="/works/thestone">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.casestudy}>
           <div className={styles.text}>
@@ -106,9 +107,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Toot} alt="toot" />
-          <a href="/works/toot">
+          <Link to="/works/toot">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
       </div>
       <div data-aos="fade-up" className={styles.doublecard}>
@@ -118,9 +119,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={Hathkari} alt="hathkari" />
-          <a href="/works/hathkari">
+          <Link to="/works/hathkari">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
         <div className={styles.case}>
           <div className={styles.text}>
@@ -128,9 +129,9 @@ export default function Card() {
             <p>Branding | Website</p>
           </div>
           <img src={CreamForest} alt="creamforest" />
-          <a href="/works/creamforest">
+          <Link to="/works/creamforest">
             <button className={styles.casebutton}>View Case Study</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

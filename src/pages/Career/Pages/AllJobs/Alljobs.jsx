@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 import React from "react";
 import AnimatedComponent from "../../../../components/AnimatedComponent";
 
@@ -33,9 +33,9 @@ function Alljobs() {
           <div className={styles.jobs}>
             <p>Graphic Designer</p>
           </div>
-          <a href="/applynow">
+          <Link to="/applynow">
             <button className={styles.button}>Apply Now</button>
-          </a>
+          </Link>
         </div>
       </div>
     </AnimatedComponent>

@@ -4,12 +4,13 @@ import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import img2 from "../../assets/aboutus/haraay-understanding you.png"
-import img3 from "../../assets/aboutus/haraay-market analysis.png"
-import img4 from "../../assets/aboutus/haraay-01.png"
-import img5 from "../../assets/aboutus/haraay-02.png"
-import img6 from "../../assets/aboutus/haraay-proof of delivery.png"
-import mainImage from "../../assets/aboutus/3.png"
+import img2 from "../../assets/aboutus/haraay-understanding you.png";
+import img3 from "../../assets/aboutus/haraay-market analysis.png";
+import img4 from "../../assets/aboutus/haraay-01.png";
+import img5 from "../../assets/aboutus/haraay-02.png";
+import img6 from "../../assets/aboutus/haraay-proof of delivery.png";
+import mainImage from "../../assets/aboutus/3.png";
+import { Link } from "react-router-dom";
 
 function About() {
   useEffect(() => {
@@ -69,7 +70,10 @@ function About() {
             <span>OUR PROCESS</span>
           </div>
         </div>
-        <div data-aos="fade-up" className={`${styles.textincolor} ${styles.inwhite}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.textincolor} ${styles.inwhite}`}
+        >
           <p>
             Attention-worthy, shareable experiences don't just happen.They are
             the results of long, rocky, difficult and always inspired road to
@@ -111,7 +115,7 @@ function About() {
           </div>
           <div className={styles.image}>
             <img src={img3} alt="hdsimage" className={styles.imageone} />
-          </div> 
+          </div>
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
           <div className={styles.image}>
@@ -140,10 +144,14 @@ function About() {
               clients.
             </p>
           </div>
-          <div className={styles.image}><img src={img5} alt="hdsimage" className={styles.imageone} /></div>
+          <div className={styles.image}>
+            <img src={img5} alt="hdsimage" className={styles.imageone} />
+          </div>
         </section>
         <section data-aos="fade-up" className={styles.textimg}>
-          <div className={styles.image}><img src={img6} alt="hdsimage" /></div>
+          <div className={styles.image}>
+            <img src={img6} alt="hdsimage" />
+          </div>
           <div className={styles.imagetxt}>
             <p className={styles.boldheading}>Proof of delivery</p>
             <p>
@@ -199,9 +207,9 @@ function About() {
             <p>Schedule a meeting with us.</p>
           </div>
           <div>
-            <a href="/contactus">
+            <Link to="/contactus">
               <button className={styles.contact}>Get in touch!</button>
-            </a>
+            </Link>
           </div>
         </section>
       </div>

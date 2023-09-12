@@ -8,6 +8,7 @@ import img4 from "../../../assets/casestudies/toot/Artboard 10@4x 1.png";
 import img5 from "../../../assets/casestudies/toot/Artboard 12@4x 1.png";
 import img6 from "../../../assets/casestudies/toot/Artboard 1@4x (1) 1.png";
 import img7 from "../../../assets/casestudies/toot/93 1.png";
+import { Link } from "react-router-dom";
 
 function Toot() {
   return (
@@ -69,9 +70,9 @@ function Toot() {
           </div>
           <div className={styles.last}>
             <img src={img7} alt="RAD Media" className={styles.lastimg} />
-            <a href="/works/hathkari">
+            <Link to="/works/hathkari">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

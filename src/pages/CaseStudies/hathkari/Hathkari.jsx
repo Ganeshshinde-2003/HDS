@@ -9,6 +9,7 @@ import img5 from "../../../assets/casestudies/hathkari/Golden_Logo_on_Black_Text
 import img6 from "../../../assets/casestudies/hathkari/93 2.png";
 import img7 from "../../../assets/casestudies/hathkari/rm405-da01-04-mockup (1) 1.png";
 import img8 from "../../../assets/casestudies/hathkari/Random Ice Cream Cups Mockup 1.png";
+import { Link } from "react-router-dom";
 
 function Hathkari() {
   return (
@@ -63,9 +64,9 @@ function Hathkari() {
           </div>
           <div className={styles.last}>
             <img src={img8} alt="CreamForest" className={styles.lastimg} />
-            <a href="/works/creamforest">
+            <Link to="/works/creamforest">
               <button className={styles.button}>View Case Study</button>
-            </a>
+            </Link>
           </div>
         </div>
       </main>

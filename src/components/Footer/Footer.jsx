@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./style.module.css";
 import Logo from "../../assets/images/HDSlogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,15 +8,16 @@ import {
   faInstagram,
   faBehance,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
         <div className={`${styles.links} ${styles.linkstwo}`}>
-          <a href="/">
+          <Link to="/">
             <img src={Logo} alt="LOGO" className={styles.logo} />
-          </a>
+          </Link>
           <p>Follow Us On:</p>
           <a href="https://www.linkedin.com/company/haraaydesignstudio/">
             <FontAwesomeIcon className={styles.link} icon={faLinkedin} />
@@ -31,24 +33,26 @@ function Footer() {
           </a>
         </div>
         <div className={styles.links}>
-          <a href="/about">
+          <Link to="/about">
             <p className={styles.link}>About Haraay</p>
-          </a>
-          <a href="/expertise">
+          </Link>
+          <Link to="/expertise">
             <p className={styles.link}>Expertise</p>
-          </a>
-          <a href="/works">
+          </Link>
+          <Link to="/works">
             <p className={styles.link}>Work</p>
-          </a>
+          </Link>
         </div>
         <div className={styles.links}>
           <p>Let's Do it - </p>
-          <a href="/contactus">
+          <Link to="/contactus">
             <button className={styles.button}>Contact Us</button>
-          </a>
+          </Link>
         </div>
       </div>
-      <p className={styles.copy}>© 2023 All Rights Reserved Haraay Design Studio LLP</p>
+      <p className={styles.copy}>
+        © 2023 All Rights Reserved Haraay Design Studio LLP
+      </p>
     </div>
   );
 }
