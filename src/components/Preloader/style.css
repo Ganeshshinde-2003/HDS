@@ -31,3 +31,11 @@
   justify-content: center;
   font-size: 30px;
 }
+@media (max-width: 500px) {
+  .preloader p {
+    font-size: 20px;
+  }
+  .preloader .texts-container {
+    font-size: 15px;
+  }
+}
