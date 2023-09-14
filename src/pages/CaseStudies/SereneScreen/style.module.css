@@ -1,132 +1,132 @@
 .maincontainer {
-    width: 100%;
-    color: #2b2322;
-  }
-  hr {
-    border: -1px solid #2b2322;
-  }
-  .mainpart {
+  width: 100%;
+  color: #2b2322;
+}
+hr {
+  border: -1px solid #2b2322;
+}
+.mainpart {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.headingtext {
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.headingtext :nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+}
+.headingtext :nth-child(2) {
+  font-size: 30px;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+.imgpart {
+  padding: 0 40px;
+}
+.text,
+.images {
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+}
+.text :nth-child(1) {
+  width: 50%;
+  font-size: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text :nth-child(1)::after {
+  content: "";
+  width: 91px;
+  border-bottom: 2px solid black;
+}
+.text p {
+  width: 50%;
+  font-size: 18px;
+  word-spacing: 7px;
+}
+.images {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.images img {
+  width: 50%;
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+.threeimages {
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.threeimages img {
+  flex: 0 0 calc(33.33% - 10px);
+  max-width: calc(33% - 10px);
+}
+
+@media (max-width: 950px) {
+  .text {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    width: 100%;
-    margin-bottom: 40px;
   }
+  .text :nth-child(1),
+  .text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
   .headingtext {
-    margin-top: 40px;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .headingtext :nth-child(1) {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .headingtext :nth-child(2) {
-    font-size: 30px;
-    font-weight: 400;
-  }
-  img {
-    width: 100%;
-  }
-  .imgpart {
-    padding: 0 40px;
+    margin-left: 10px;
   }
   .text,
   .images {
     display: flex;
-    padding: 0 40px;
-  }
-  .text :nth-child(1) {
-    width: 50%;
-    font-size: 29px;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .text :nth-child(1)::after {
-    content: "";
-    width: 91px;
-    border-bottom: 2px solid black;
-  }
-  .text p {
-    width: 50%;
-    font-size: 18px;
-    word-spacing: 7px;
-  }
-  .images {
-    gap: 20px;
-    flex-wrap: wrap;
+    /* gap: 10px; */
+    padding: 0 0px;
   }
   .images img {
-    width: 50%;
-    flex: 0 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
+    width: 100%;
+    max-width: calc(100%);
   }
-  .threeimages {
-    gap: 18px;
-    flex-wrap: wrap;
+  .text :nth-child(1),
+  .text p {
+    width: 100%;
   }
-  .threeimages img {
-    flex: 0 0 calc(33.33% - 10px);
-    max-width: calc(33% - 10px);
+  .text p {
+    font-size: 15px;
   }
-  
-  @media (max-width: 950px) {
-    .text{
-      display: flex;
-      flex-direction: column;
-    }
-    .text :nth-child(1),
-    .text p {
-      width: 100%;
-    }
+  .images.threeimages {
+    flex-direction: column;
   }
-  
-  @media (max-width: 700px) {
-    .headingtext {
-      margin-left: 10px;
-    }
-    .text,
-    .images {
-      display: flex;
-      flex-direction: column;
-      /* gap: 10px; */
-      padding: 0 0px;
-    }
-    .images img {
-      width: 100%;
-      max-width: calc(100%);
-    }
-    .text :nth-child(1),
-    .text p {
-      width: 100%;
-    }
-    .text p {
-      font-size: 15px;
-    }
-    .images.threeimages {
-      flex-direction: column;
-    }
-    .images .threeimages img {
-      width: 100%;
-    }
-    .imgpart {
-      padding: 0 0px;
-    }
+  .images .threeimages img {
+    width: 100%;
   }
-  .last {
-    position: relative;
+  .imgpart {
+    padding: 0 0px;
   }
-  .button {
-    position: absolute;
-    color: white;
-    bottom: 10%;
-    left: 5%;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
+}
+.last {
+  position: relative;
+}
+.button {
+  position: absolute;
+  color: white;
+  bottom: 10%;
+  left: 5%;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+}

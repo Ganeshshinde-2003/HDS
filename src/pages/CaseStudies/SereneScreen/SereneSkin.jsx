@@ -12,6 +12,9 @@ import B5 from "../../../assets/casestudies/SereneSkin/bottel 1 8.png";
 import Presentation from "../../../assets/casestudies/SereneSkin/presention 1 1.png";
 import B6 from "../../../assets/casestudies/SereneSkin/bottel 15 1.png";
 import B7 from "../../../assets/casestudies/SereneSkin/bottel 17 (1) 1.png";
+import B8 from "../../../assets/casestudies/SereneSkin/Screenshot 2023-09-04 at 1.41 1.png";
+import B9 from "../../../assets/casestudies/SereneSkin/Artboard 1@4x 2 1.png";
+import B10 from "../../../assets/casestudies/SereneSkin/Identity-Invitation-Stationery-Free-psd-Mockup-copy 1.png";
 import AnimatedComponent from "../../../components/AnimatedComponent";
 
 function SereneSkin() {
@@ -63,6 +66,11 @@ function SereneSkin() {
               <img src={Design} alt="Serene Skin" />
               <img src={Title2} alt="Serene Skin" />
             </section>
+            <section className={styles.images}>
+              <img src={B8} alt="Serene Skin" style={{ height: "auto" }} />
+              <img src={B9} alt="Serene Skin" />
+            </section>
+            <img className={styles.imgpart} src={B10} alt="Serene Skin" />
             <section className={styles.text}>
               <p>Packaging</p>
               <p>
