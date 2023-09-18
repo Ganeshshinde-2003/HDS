@@ -46,7 +46,12 @@ function ContactUs() {
   const submitData = async (e) => {
     e.preventDefault();
 
-    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || number.trim() === '') {
+    if (
+      firstName.trim() === "" ||
+      lastName.trim() === "" ||
+      email.trim() === "" ||
+      number.trim() === ""
+    ) {
       setErrormsg("Please fill in all required fields.");
       setIsErrorAlert(true);
       setTimeout(() => {
@@ -56,7 +61,7 @@ function ContactUs() {
     }
 
     try {
-      await fetch("https://hds-backend-server.onrender.com/api/contact", {
+      await fetch("https://hds-backend.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

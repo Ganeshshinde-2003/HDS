@@ -31,7 +31,14 @@ function ApplyNow() {
   const submitData = async (e) => {
     e.preventDefault();
 
-    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || number.trim() === '' || resume.trim() === '' || portfolio.trim() === '') {
+    if (
+      firstName.trim() === "" ||
+      lastName.trim() === "" ||
+      email.trim() === "" ||
+      number.trim() === "" ||
+      resume.trim() === "" ||
+      portfolio.trim() === ""
+    ) {
       setErrormsg("Please fill in all required fields.");
       setIsErrorAlert(true);
       setTimeout(() => {
@@ -41,21 +48,21 @@ function ApplyNow() {
     }
 
     try {
-      await fetch("https://hds-backend-server.onrender.com/api/application", {
+      await fetch("https://hds-backend.onrender.com/api/application", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
-        setIsSuccessAlert(true);
+      setIsSuccessAlert(true);
+      setTimeout(() => {
+        setIsSuccessAlert(false);
         setTimeout(() => {
-          setIsSuccessAlert(false);
-          setTimeout(() => {
-            navigate("/about");
-            window.scrollTo(0, 0);
-          }, 1000);
-        }, 2000);
+          navigate("/about");
+          window.scrollTo(0, 0);
+        }, 1000);
+      }, 2000);
     } catch (error) {
       setErrormsg("Network Error!");
       setIsErrorAlert(true);
