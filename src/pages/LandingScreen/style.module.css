@@ -142,6 +142,9 @@
   .jj .haraayspan {
     font-size: 90px;
   }
+  .jj .hellospan {
+    top: 68%;
+  }
 }
 @media (max-width: 320px) {
   .jj span:first-child {
