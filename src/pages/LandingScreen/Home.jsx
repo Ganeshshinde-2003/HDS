@@ -88,7 +88,7 @@ function Home() {
     <AnimatedComponent>
       <main className={styles.main}>
         <div data-aos="fade-up" className={styles.headings}>
-          <img src={mainImage} alt="mainImage" />
+          <img src={mainImage} alt="mainImage" className={styles.mainImage} />
           <h1 className={styles.jj}>
             <span className={styles.hellospan}>hello</span>
             <br />
