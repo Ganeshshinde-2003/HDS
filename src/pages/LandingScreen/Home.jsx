@@ -9,6 +9,7 @@ import Radmedia from "../../assets/casestudies/RadMedia/Duct_Tape_Mockup_ everyw
 import Creamforest from "../../assets/casestudies/CreamForest/Random Ice Cream Cups Mockup 1 (1).png";
 import Atmabodh from "../../assets/casestudies/Atmabodh/18728358 1.png";
 import videoFile from "../../assets/Comp 2.MP4";
+import mainImage from "../../assets/images/homeimage.png";
 
 function Home() {
   useEffect(() => {
@@ -87,18 +88,16 @@ function Home() {
     <AnimatedComponent>
       <main className={styles.main}>
         <div data-aos="fade-up" className={styles.headings}>
+          <img src={mainImage} alt="mainImage" />
           <h1 className={styles.jj}>
-            <span>hello</span>
+            <span className={styles.hellospan}>hello</span>
+            <br />
             <span>we are</span>
-            <span>Haraay!</span>
-          </h1>
-          <h1 className={styles.jj}>
-            <span>hello</span>
-            <span>we are</span>
-            <span>Haraay!</span>
+            <br />
+            <span className={styles.haraayspan}>Haraay!</span>
           </h1>
         </div>
-        <div data-aos="fade-up" className={styles.videopart}></div>
+        {/* <div data-aos="fade-up" className={styles.videopart}></div> */}
         <div data-aos="fade-up" className={styles.text}>
           <p>
             We bring <br />

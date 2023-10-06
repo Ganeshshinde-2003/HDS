@@ -17,25 +17,24 @@
 }
 
 .headings {
-  margin-top: 40px;
-  height: 150vh;
+  height: auto;
+  margin-bottom: 100px;
   position: relative;
-  padding: 30px;
   background: radial-gradient(circle, lighten(#2b2322, 5%) 15%, #2b2322);
 }
+
 .jj {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
   text-align: center;
-  font-size: 20vmin;
   color: #2b2322;
   line-height: 0.85;
   background-size: contain;
   background-clip: text;
 }
-.jj + .jj {
+/* .jj + .jj {
   color: #e5348c;
   animation: meh 3s ease-out infinite alternate;
 }
@@ -53,15 +52,22 @@
 .jj span {
   display: block;
   margin-bottom: 30px;
+} */
+.jj .hellospan {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #2b2322;
 }
 .jj span:first-child {
-  font-size: 550px;
+  font-size: 300px;
 }
-.jj span:nth-child(2) {
-  font-size: 150px;
+.jj .haraayspan {
+  padding-top: 40px;
+  font-size: 280px;
 }
 .jj span:nth-child(3) {
-  font-size: 300px;
+  font-size: 250px;
 }
 .text {
   font-size: 40px;
@@ -81,50 +87,66 @@
   }
 }
 @media (max-width: 1100px) {
-  .jj span:nth-child(3) {
-    font-size: 210px;
-  }
   .jj span:first-child {
-    font-size: 400px;
+    font-size: 250px;
   }
-}
-@media (max-width: 850px) {
-  .headings {
-    height: 80vh;
+  .jj .haraayspan {
+    font-size: 230px;
   }
   .jj span:nth-child(3) {
     font-size: 180px;
   }
-  .jj span:first-child {
-    font-size: 300px;
-  }
-  .jj span:nth-child(2) {
-    font-size: 130px;
-  }
 }
-@media (max-width: 750px) {
-  .jj span:nth-child(3) {
-    font-size: 140px;
-  }
+@media (max-width: 850px) {
   .jj span:first-child {
     font-size: 200px;
   }
-  .jj span:nth-child(2) {
-    font-size: 110px;
+  .jj .haraayspan {
+    font-size: 170px;
+  }
+  .jj span:nth-child(3) {
+    font-size: 150px;
+  }
+}
+@media (max-width: 750px) {
+  .jj span:first-child {
+    font-size: 200px;
+  }
+  .jj .haraayspan {
+    font-size: 170px;
+  }
+  .jj span:nth-child(3) {
+    font-size: 150px;
   }
 }
 @media (max-width: 600px) {
-    .headings {
-        height: 50vh;
-    }
+  .jj .hellospan {
+    top: 15%;
+  }
   .jj span:nth-child(3) {
     font-size: 88px;
   }
   .jj span:first-child {
-    font-size: 140px;
+    font-size: 100px;
   }
-  .jj span:nth-child(2) {
-    font-size: 80px;
+  .jj .haraayspan {
+    font-size: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .jj .haraayspan {
+    font-size: 90px;
+  }
+}
+@media (max-width: 320px) {
+  .jj span:first-child {
+    font-size: 70px;
+  }
+  .jj .haraayspan {
+    font-size: 75px;
+  }
+  .jj span:nth-child(3) {
+    font-size: 70px;
   }
 }
 .stickyparent {
@@ -187,14 +209,14 @@
   line-height: normal;
   padding-left: 12%;
 }
-.section video{
+.section video {
   border-radius: 10px;
   width: 100%;
 }
-.videotag{
+.videotag {
   width: 70%;
 }
-.section{
+.section {
   padding: 0 40px;
   height: 750px;
   display: flex;
@@ -205,14 +227,15 @@
   align-self: flex-end;
   text-align: right;
 }
-.section .head, .section3 .head {
+.section .head,
+.section3 .head {
   font-size: 20px;
   font-weight: bold;
 }
-.section2{
+.section2 {
   height: 500px;
 }
-.section3{
+.section3 {
   padding: 0 auto;
   display: flex;
   flex-direction: column;
@@ -264,10 +287,11 @@
   align-items: center;
   justify-content: center;
 }
-.lastpart p, .lastpart p span {
+.lastpart p,
+.lastpart p span {
   color: #000;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-weight: bold;
   line-height: normal;
@@ -278,78 +302,86 @@
   cursor: pointer;
 }
 
-@media (max-width: 1100px){
-  .dynamicP{
+@media (max-width: 1100px) {
+  .dynamicP {
     font-size: 200px;
   }
-  .dynamicP2{
+  .dynamicP2 {
     font-size: 300px;
   }
 }
-@media (max-width: 1000px){
-  .section{
+@media (max-width: 1000px) {
+  .section {
     height: 500px;
   }
-  .lastpart{
+  .lastpart {
     height: auto;
   }
-  .lastpart p , .lastpart p span{
+  .lastpart p,
+  .lastpart p span {
     font-size: 45px;
   }
 }
-@media (max-width: 800px){
-  .dynamicP{
+@media (max-width: 800px) {
+  .dynamicP {
     font-size: 160px;
   }
-  .dynamicP2{
+  .dynamicP2 {
     font-size: 206px;
   }
-  .section{
+  .section {
     height: 300px;
   }
-  .identity{
+  .identity {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     padding-left: 100px;
   }
 }
-@media (max-width: 500px){
-  .videotag{
+@media (max-width: 500px) {
+  .videotag {
     width: 100%;
   }
-  .dynamicP{
-    font-size: 100px;
+  .dynamicP {
+    font-size: 95px;
   }
-  .dynamicP2{
+  .dynamicP2 {
     font-size: 130px;
   }
-  .section{
+  .section {
     height: auto;
     flex-direction: column;
     gap: 30px;
   }
-  .identity{
+  .identity {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     padding-left: 20px;
   }
-  .section, .section3{
+  .section,
+  .section3 {
     padding: 0 20px;
   }
-  .singleimg{
+  .singleimg {
     width: auto;
   }
-  .sticky2, .sticky{
+  .sticky2,
+  .sticky {
     height: 30vh;
   }
-  .lastpart p, .lastpart p span {
+  .lastpart p,
+  .lastpart p span {
     font-size: 28px;
     padding: 20px;
   }
-  .lastpart{
+  .lastpart {
     background-color: white;
   }
-  
+}
+@media (max-width: 350px) {
+  .dynamicP {
+    font-size: 80px;
+  }
 }
