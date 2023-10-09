@@ -10,6 +10,7 @@ import Toot from "../../../assets/images/TOOT.png";
 import Hathkari from "../../../assets/images/hathkari.png";
 import CreamForest from "../../../assets/images/creameforest.png";
 import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
+import Purus from "../../../assets/casestudies/purus/2 33.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -21,6 +22,21 @@ export default function Card() {
 
   return (
     <div className={styles.container}>
+      <div data-aos="fade-up" className={styles.singlecard}>
+        <div className={`${styles.text} ${styles.purustext}`}>
+          <p>Puru's Enterprises</p>
+          <p>Branding | Website</p>
+        </div>
+        <img src={Purus} alt="SereneSkin" className={styles.purusimg} />
+        <Link to="/works/purus">
+          <button
+            className={styles.casebutton}
+            style={{ border: "2px solid white", color: "white" }}
+          >
+            View Case Study
+          </button>
+        </Link>
+      </div>
       <div data-aos="fade-up" className={styles.singlecard}>
         <div className={styles.text}>
           <p>Serene Skin</p>
