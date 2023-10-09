@@ -23,6 +23,7 @@ import PawPet from "./pages/CaseStudies/PawPet/PawPet";
 import Culinary from "./pages/CaseStudies/Culinary/Culinary";
 import Atmabodh from "./pages/CaseStudies/Atmabodh/Atmabodh";
 import Purus from "./pages/CaseStudies/Purus/Purus";
+import "./App.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Initial loading state
@@ -33,8 +34,6 @@ function App() {
   });
 
   useEffect(() => {
-    // Change the timeout as needed
-
     const mouseMove = (e) => {
       setMousePosition({
         x: e.clientX,
@@ -46,6 +45,7 @@ function App() {
 
       // Add or remove the class based on cursor position
       const cursor = document.querySelector(".cursor");
+
       if (cursor) {
         if (isOverText) {
           cursor.classList.add("text-mode");
@@ -61,6 +61,9 @@ function App() {
       window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
+
+  // Log the updated mousePosition
+  useEffect(() => {}, [mousePosition]);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -73,8 +76,6 @@ function App() {
       y: mousePosition.y - 16,
     },
   };
-
-  console.log(isLoading);
 
   return (
     <div className="App">
