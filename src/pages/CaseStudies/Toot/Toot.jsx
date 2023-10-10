@@ -33,9 +33,13 @@ function Toot() {
           <section className={styles.text}>
             <p>Branding</p>
             <p>
-              RAD media’s identity is an abstract shape with each line
-              representing a part of photography and videography. The whole
-              aesthetic of the brand is simple and clean yet pop-py.
+              Our job consisted of creating a brand and its packaging for a
+              product based an artisanal and more natural ice caring for our
+              body as a container of life; this was transferred to the logo that
+              consists of a very expensive and classic typeface after the
+              packaging was made in the which we rainforce the concept with very
+              striking flat colors with large texts, illustrations and abstract
+              brush strokes in black have a powerful construct
             </p>
           </section>
           <section className={styles.text}>
