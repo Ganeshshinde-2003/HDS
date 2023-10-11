@@ -25,7 +25,7 @@ export default function Card() {
       <div data-aos="fade-up" className={styles.singlecard}>
         <div className={`${styles.text} ${styles.purustext}`}>
           <p>Puru's Enterprises</p>
-          <p>Branding | Website</p>
+          <p>Branding | Website | Packaging</p>
         </div>
         <img src={Purus} alt="SereneSkin" className={styles.purusimg} />
         <Link to="/works/purus">
