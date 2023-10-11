@@ -28,7 +28,7 @@ function Purus() {
         <div className={styles.mainpart}>
           <div className={styles.headings}>
             <p>Puru’s Enterprise</p>
-            <p>Shaping Spaces</p>
+            <p>Inspiring for Innovation</p>
           </div>
           <div className={styles.imgcontainer}>
             <video src={videoFile} autoPlay controls loop playsInline>

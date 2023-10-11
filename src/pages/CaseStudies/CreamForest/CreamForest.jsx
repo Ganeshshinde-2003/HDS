@@ -8,7 +8,7 @@ import img4 from "../../../assets/casestudies/CreamForest/behance-05.png";
 import img5 from "../../../assets/casestudies/CreamForest/behance-07.png";
 import img6 from "../../../assets/casestudies/CreamForest/behance-06.png";
 import img7 from "../../../assets/casestudies/CreamForest/reels-08 1.png";
-import img8 from "../../../assets/casestudies/purus/2 33.png";
+import img8 from "../../../assets/casestudies/purus/9 4.png";
 import { Link } from "react-router-dom";
 
 function CreamForest() {
@@ -74,10 +74,7 @@ function CreamForest() {
             <p>Puru's</p>
           </div>
           <div className={styles.last}>
-            <img
-              src={img8}
-              alt="PURUS"
-            />
+            <img src={img8} alt="PURUS" />
             <Link to="/works/purus">
               <button className={styles.button}>View Case Study</button>
             </Link>

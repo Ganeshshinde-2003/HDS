@@ -10,7 +10,7 @@ import Toot from "../../../assets/images/TOOT.png";
 import Hathkari from "../../../assets/images/hathkari.png";
 import CreamForest from "../../../assets/images/creameforest.png";
 import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
-import Purus from "../../../assets/casestudies/purus/2 33.png";
+import Purus from "../../../assets/casestudies/purus/9 4.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
