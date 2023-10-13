@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./style.module.css";
 import AnimatedComponent from "../../../../components/AnimatedComponent";
+import emailjs from "@emailjs/browser";
 
 function ApplyNow() {
   const [firstName, setFirstName] = useState("");
@@ -16,7 +17,7 @@ function ApplyNow() {
   const [errormsg, setErrormsg] = useState(
     "Submission failed. Please try again."
   );
-
+  const form = useRef();
   const navigate = useNavigate();
   // hello@haraaydesignstudio.com
   const data = {
@@ -55,6 +56,21 @@ function ApplyNow() {
         },
         body: JSON.stringify(data),
       });
+      emailjs
+        .sendForm(
+          "service_ftzflyq",
+          "template_iltqpu8",
+          form.current,
+          "RDb3wdP9PFxvPNs7-"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       setIsSuccessAlert(true);
       setTimeout(() => {
         setIsSuccessAlert(false);
@@ -76,11 +92,12 @@ function ApplyNow() {
     <AnimatedComponent>
       <div className={styles.main}>
         <div className={styles.container}>
-          <form>
+          <form ref={form}>
             <div className={styles.name}>
               <input
                 type="text"
                 required
+                name="FirstName"
                 placeholder="First Name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -88,6 +105,7 @@ function ApplyNow() {
               <input
                 type="text"
                 required
+                name="LastName"
                 placeholder="Last Name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
@@ -96,6 +114,7 @@ function ApplyNow() {
             <input
               type="email"
               required
+              name="EmailAddress"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -103,6 +122,7 @@ function ApplyNow() {
             <input
               type="text"
               required
+              name="PhoneNo"
               placeholder="Number"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
@@ -128,6 +148,7 @@ function ApplyNow() {
             <textarea
               rows="7"
               cols="10"
+              name="message"
               placeholder="Personal Note"
               value={desc}
               onChange={(e) => setDesc(e.target.value)}

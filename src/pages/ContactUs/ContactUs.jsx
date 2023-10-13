@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./style.module.css";
@@ -16,6 +16,7 @@ import {
   faInstagram,
   faBehance,
 } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "@emailjs/browser";
 
 function ContactUs() {
   useEffect(() => {
@@ -32,7 +33,7 @@ function ContactUs() {
   const [errormsg, setErrormsg] = useState(
     "Submission failed. Please try again."
   );
-
+  const form = useRef();
   const navigate = useNavigate();
 
   const data = {
@@ -68,6 +69,21 @@ function ContactUs() {
         },
         body: JSON.stringify(data),
       });
+      emailjs
+        .sendForm(
+          "service_ftzflyq",
+          "template_iltqpu8",
+          form.current,
+          "RDb3wdP9PFxvPNs7-"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       setIsSuccessAlert(true);
       setTimeout(() => {
         setIsSuccessAlert(false);
@@ -102,7 +118,7 @@ function ContactUs() {
           </p>
         </div>
         <div data-aos="fade-up" className={styles.card}>
-          <form>
+          <form ref={form}>
             <div className={styles.heading}>
               <p>Send a message</p>
               <FontAwesomeIcon
@@ -114,6 +130,7 @@ function ContactUs() {
               <input
                 type="text"
                 required
+                name="FirstName"
                 placeholder="First Name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -121,6 +138,7 @@ function ContactUs() {
               <input
                 type="text"
                 required
+                name="LastName"
                 placeholder="Last Name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
@@ -129,6 +147,7 @@ function ContactUs() {
             <input
               type="email"
               placeholder="Email"
+              name="EmailAddress"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -136,6 +155,7 @@ function ContactUs() {
             <input
               type="text"
               placeholder="Phone"
+              name="PhoneNo"
               required
               value={number}
               onChange={(e) => setNumber(e.target.value)}
@@ -143,6 +163,7 @@ function ContactUs() {
             <textarea
               rows="7"
               cols="10"
+              name="message"
               placeholder="How Can We Help You?"
               required
               value={desc}
