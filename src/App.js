@@ -24,6 +24,7 @@ import Culinary from "./pages/CaseStudies/Culinary/Culinary";
 import Atmabodh from "./pages/CaseStudies/Atmabodh/Atmabodh";
 import Purus from "./pages/CaseStudies/Purus/Purus";
 import "./App.css";
+import Hylete from "./pages/CaseStudies/Hylete/Hylete";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Initial loading state
@@ -110,6 +111,7 @@ function App() {
               <Route path="/works/culinary" element={<Culinary />} />
               <Route path="/works/atmabodh" element={<Atmabodh />} />
               <Route path="/works/purus" element={<Purus />} />
+              <Route path="/works/hylete" element={<Hylete />} />
             </Routes>
           </AnimatePresence>
           <Footer />

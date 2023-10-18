@@ -11,6 +11,7 @@ import Hathkari from "../../../assets/images/hathkari.png";
 import CreamForest from "../../../assets/images/creameforest.png";
 import PawPet from "../../../assets/casestudies/pawpets/m016t0119_c_branding_mockup_27may22.png";
 import Purus from "../../../assets/casestudies/purus/9 4.png";
+import Hylete from "../../../assets/casestudies/Hylete/5625.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -24,28 +25,45 @@ export default function Card() {
     <div className={styles.container}>
       <div data-aos="fade-up" className={styles.singlecard}>
         <div className={`${styles.text} ${styles.purustext}`}>
-          <p>Puru's Enterprises</p>
-          <p>Branding | Website | Packaging</p>
+          <p style={{ color: "black" }}>Puru's Enterprises</p>
+          <p style={{ color: "black" }}>Branding | Website | Packaging</p>
         </div>
         <img src={Purus} alt="SereneSkin" className={styles.purusimg} />
         <Link to="/works/purus">
           <button
             className={styles.casebutton}
-            style={{ border: "2px solid white", color: "white" }}
+            style={{ border: "2px solid black", color: "black" }}
           >
             View Case Study
           </button>
         </Link>
       </div>
-      <div data-aos="fade-up" className={styles.singlecard}>
-        <div className={styles.text}>
-          <p>Serene Skin</p>
-          <p>Branding | Website</p>
+      <div data-aos="fade-up" className={styles.doublecard}>
+        <div className={styles.case}>
+          <div className={styles.text}>
+            <p>Serene Skin</p>
+            <p>Branding | Website</p>
+          </div>
+          <img src={Serene} alt="SereneSkin" />
+          <Link to="/works/sereneskin">
+            <button className={styles.casebutton}>View Case Study</button>
+          </Link>
         </div>
-        <img src={Serene} alt="SereneSkin" />
-        <Link to="/works/sereneskin">
-          <button className={styles.casebutton}>View Case Study</button>
-        </Link>
+        <div className={styles.case}>
+          <div className={styles.text}>
+            <p style={{ color: "white" }}>Hylete Sports Event</p>
+            <p style={{ color: "white" }}>Innovation for Inspiration</p>
+          </div>
+          <img src={Hylete} alt="SereneSkin" />
+          <Link to="/works/hylete">
+            <button
+              className={styles.casebutton}
+              style={{ border: "2px solid white", color: "white" }}
+            >
+              View Case Study
+            </button>
+          </Link>
+        </div>
       </div>
       <div data-aos="fade-up" className={styles.doublecard}>
         <div className={styles.case}>

@@ -204,7 +204,7 @@
 .lastpart p {
   color: #000;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-weight: bold;
   line-height: normal;
@@ -216,8 +216,8 @@
   color: black;
 }
 
-@media (max-width: 1000px){
-  .secfirst .text{
+@media (max-width: 1000px) {
+  .secfirst .text {
     font-size: 25px;
   }
 }
@@ -226,19 +226,19 @@
   .header {
     height: auto;
   }
-  .header .headings{
+  .header .headings {
     font-size: 55px;
     word-spacing: -4px;
     letter-spacing: -2px;
   }
-  .arrowdown{
+  .arrowdown {
     font-size: 70px;
   }
-  .header .circle{
+  .header .circle {
     width: 100px;
     height: 100px;
   }
-  .secfirst{
+  .secfirst {
     flex-direction: column;
     gap: 5px;
     margin: 10px 40px;
@@ -248,31 +248,31 @@
     padding-right: 0;
     font-size: 50px;
   }
-  .secfirst .text{
+  .secfirst .text {
     width: 100%;
     font-size: 20px;
   }
-  .buttonspart{
+  .buttonspart {
     margin: 10px 40px;
   }
-  .secpart{
+  .secpart {
+    height: 50vh;
+  }
+  .lastpart {
     height: auto;
   }
-  .lastpart{
-    height: auto;
-  }
-  .button{
+  .button {
     font-size: 14px;
   }
-  .dynamicP{
+  .dynamicP {
     font-size: 220px;
   }
   .lastpart p {
     font-size: 45px;
   }
 }
-@media (max-width: 450px){
-  .dynamicP{
+@media (max-width: 450px) {
+  .dynamicP {
     font-size: 170px;
   }
   .header .headings {
@@ -283,29 +283,29 @@
   .header p:nth-child(2) {
     font-size: 14px;
   }
-  .arrowdown{
+  .arrowdown {
     font-size: 50px;
   }
-  .header .circle{
+  .header .circle {
     width: 70px;
     height: 70px;
   }
-  .secpart{
+  .secpart {
     background-color: white;
   }
   .secfirst {
     margin: 10px 10px;
   }
-  .buttonspart{
+  .buttonspart {
     display: none;
   }
-  .secfirst .head{
+  .secfirst .head {
     font-size: 35px;
   }
   .secfirst .text {
     font-size: 14px;
   }
-  .dynamicP{
+  .dynamicP {
     font-size: 158px;
   }
   .lastpart p {
@@ -315,10 +315,10 @@
   .changeColor {
     animation: fadeInBackground 1s ease forwards;
   }
-  .lastpart{
+  .lastpart {
     background-color: white;
   }
-  
+
   @keyframes fadeInBackground {
     from {
       background-color: white;
@@ -330,7 +330,7 @@
   .lastPartColor {
     animation: lastpartchangeColor 1s ease forwards;
   }
-  
+
   @keyframes lastpartchangeColor {
     from {
       background-color: white;

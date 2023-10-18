@@ -72,6 +72,7 @@ function CreamForest() {
           </section>
           <div className={styles.headings}>
             <p>Puru's</p>
+            <p>Inspiring for Innovation</p>
           </div>
           <div className={styles.last}>
             <img src={img8} alt="PURUS" />
