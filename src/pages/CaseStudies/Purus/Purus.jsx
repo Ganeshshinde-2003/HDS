@@ -51,10 +51,24 @@ function Purus() {
           <p>
             Our job consisted of creating a strong brand identity packaging, and
             it’s website. Nature driven,The characters that we are representing
-            have cell-like components which together come to build something new
-            using the imperfect geometric shapes to celebrate the organic ideas
-            of natural meetings. These subtle touches help the visual identity
-            to create a concept of human sustainability.
+            have imperfect geometric shapes to celebrate the organic ideas of
+            natural meetings. These subtle touches help the visual identity to
+            create a concept of human sustainability. The logo was
+            professionally designed tom meet the company's needs and, most
+            importantly, to appeal to its target audience, embodying the
+            concepts of luxury and sophistication intrinsic to the brand.
+          </p>
+        </section>
+        <section className={styles.textpart}>
+          <p>
+            When designing the logo, the square shape was taken into account for
+            several reasons. It symbolizes four pillars of brand and
+            sustainability.
+          </p>
+          <p>
+            The logo's design was inspired by four pillars of the brand. The
+            golden ratio was applied to the logo to imbue it with the sense of
+            balance and precision inherent in the brand's work.
           </p>
         </section>
         <section className={styles.images2}>

@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Serene from "../../assets/casestudies/SereneSkin/bottel 15 1.png";
 import Radmedia from "../../assets/casestudies/RadMedia/Duct_Tape_Mockup_ everywhere 1.png";
-import Creamforest from "../../assets/casestudies/CreamForest/Random Ice Cream Cups Mockup 1 (1).png";
-import Atmabodh from "../../assets/casestudies/Atmabodh/18728358 1.png";
+import Creamforest from "../../assets/casestudies/CreamForest/behance-06.png";
+import Hylete from "../../assets/casestudies/Hylete/5625.png";
 import videoFile from "../../assets/Comp 2.MP4";
 import mainImage from "../../assets/images/homeimage.png";
 
@@ -114,10 +114,10 @@ function Home() {
         </div>
         <section data-aos="fase-up" className={styles.section}>
           <div className={styles.img}>
-            <Link to="/works/sereneskin">
-              <img src={Serene} alt="sereneskin" />
+            <Link to="/works/hylete">
+              <img src={Hylete} alt="sereneskin" />
             </Link>
-            <p className={styles.head}>Serene Skin</p>
+            <p className={styles.head}>Hylete Sports Event</p>
             <p>Brand Identity | Packaging </p>
           </div>
           <div className={`${styles.img} ${styles.videotag}`}>
@@ -133,26 +133,26 @@ function Home() {
           className={`${styles.section} ${styles.section2}`}
         >
           <div className={styles.img}>
+            <Link to="/works/sereneskin">
+              <img src={Serene} alt="radmedia" />
+            </Link>
+            <p className={styles.head}>Serene Skin</p>
+            <p>Brand Identity | Brand Strategy </p>
+          </div>
+          <div className={styles.img}>
             <Link to="/works/radmedia">
-              <img src={Radmedia} alt="radmedia" />
+              <img src={Radmedia} alt="creamforest" />
             </Link>
             <p className={styles.head}>Rad Media</p>
             <p>Brand Identity | Brand Strategy </p>
           </div>
-          <div className={styles.img}>
-            <Link to="/works/creamforest">
-              <img src={Creamforest} alt="creamforest" />
-            </Link>
-            <p className={styles.head}>Cream Forest</p>
-            <p>Brand Identity | Packaging </p>
-          </div>
         </section>
         <section data-aos="fase-up" className={styles.section3}>
           <div className={styles.singleimg}>
-            <Link to="/works/atmabodh">
-              <img src={Atmabodh} alt="athmabodh" />
+            <Link to="/works/creamforest">
+              <img src={Creamforest} alt="athmabodh" />
             </Link>
-            <p className={styles.head}>Atmabodh</p>
+            <p className={styles.head}>Cream Forest</p>
             <p>Brand Identity | Packaging </p>
           </div>
           <Link to="/works">

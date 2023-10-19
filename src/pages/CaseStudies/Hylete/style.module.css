@@ -40,6 +40,18 @@ img {
   font-size: 18px;
   word-spacing: 7px;
 }
+.textpart {
+  display: flex;
+  padding: 20px 40px;
+}
+.textpart {
+  gap: 40px;
+}
+.textpart p {
+  width: 50%;
+  font-size: 18px;
+  word-spacing: 7px;
+}
 .image {
   width: 100%;
   gap: 20px;

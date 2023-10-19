@@ -47,12 +47,27 @@ const Hylete = () => {
         <section className={styles.text}>
           <p>Branding</p>
           <p>
-            Our job consisted of creating a strong brand identity and branding.
-            <br />
-            <br />
-            The logo's design was inspired by four pillars of the brand. The
-            golden ratio was applied to the logo to imbue it with the sense of
-            balance and precision inherent in the brand's work.
+            Haraay has created a new logo for the broadcaster, as well as a
+            brand hierarchy, identity style guide and merchandising. These
+            applications had to be suitable for use both on and off air, across
+            different channels, platforms and product identifiers, and
+            throughout all internal communications.Our job consisted of creating
+            a strong brand identity and branding.
+          </p>
+        </section>
+        <section className={styles.textpart}>
+          <p>
+            Green and blue have been retained as primary brand colours, but have
+            been updated. An additional colour palette has also been developed
+            to identify standalone products and to provide a flexibility for
+            temporary applications, like marketing campaigns. The brand also
+            introduces to new typefaces, Trip Sans.
+          </p>
+          <p>
+            The logo's design was inspired by six pillars of the brand ease,
+            quality & involvement, few more. The golden ratio was applied to the
+            logo to imbue it with the sense of balance and precision inherent in
+            the brand's work.
           </p>
         </section>
         <section className={styles.images}>

@@ -32,7 +32,7 @@ export default function Card() {
         <Link to="/works/purus">
           <button
             className={styles.casebutton}
-            style={{ border: "2px solid black", color: "black" }}
+            style={{ border: "2px solid black", color: "white" }}
           >
             View Case Study
           </button>

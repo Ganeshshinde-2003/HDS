@@ -15,6 +15,16 @@
   font-size: 35px;
   font-weight: lighter;
 }
+.textpart {
+  display: flex;
+  padding: 20px 40px;
+  gap: 40px;
+}
+.textpart p {
+  width: 50%;
+  font-size: 18px;
+  word-spacing: 7px;
+}
 img {
   width: 100%;
 }
@@ -152,10 +162,24 @@ video {
   .faqiamge p {
     font-size: 15px;
   }
+  .textpart {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textpart p {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .main {
     padding: 50px 20px;
+  }
+  .textpart {
+    padding: 0 0;
+    margin-bottom: 10px;
+  }
+  .textpart p {
+    font-size: 12px;
   }
   .faqsection .faqiamge {
     position: relative;
