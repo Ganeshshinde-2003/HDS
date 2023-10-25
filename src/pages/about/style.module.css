@@ -179,7 +179,23 @@
   font-size: 200px;
   animation: marquee 5s linear infinite;
 }
-
+.awardshead {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 40px;
+}
+.awardshead .heading {
+  font-size: 80px;
+  color: black;
+  font-weight: bold;
+}
+.awardshead .disc {
+  align-self: flex-end;
+  text-align: left;
+  font-size: 30px;
+  width: 50%;
+}
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
@@ -203,6 +219,12 @@
   .imagetxt {
     padding: 0 0;
   }
+  .awardshead .heading {
+    font-size: 60px;
+  }
+  .awardshead .disc {
+    width: 70%;
+  }
 }
 @media (max-width: 700px) {
   .marqueediv span {
@@ -212,6 +234,13 @@
   }
   .dynamicP {
     font-size: 73px;
+  }
+  .imageone {
+    height: auto;
+    width: 100%;
+  }
+  .textimg {
+    gap: 40px;
   }
   .text {
     padding: 45px 10px;
@@ -277,5 +306,81 @@
   }
   .textimg div {
     width: 100%;
+  }
+}
+.awards {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.awards .awardsimage {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.awards .awardslink {
+  flex: 1;
+}
+.awards .awardslink a {
+  color: #2b2322;
+  font-size: 40px;
+  font-weight: 900;
+}
+.awards .awardslink a:hover {
+  scale: 1;
+}
+.awardlink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.awards .awardslink .awardarrow {
+  transform: rotate(-45deg);
+}
+.awards .awardsimage img {
+  width: 600px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .awards {
+    gap: 10px;
+    margin: 10px;
+  }
+  .awards .awardsimage {
+    width: 100%;
+    justify-content: center;
+  }
+  .awards .awardsimage img {
+    width: 100%;
+    height: auto;
+  }
+  .awards .awardslink a {
+    font-size: 20px;
+  }
+  .awardlink {
+    gap: 0;
+  }
+  .awardshead {
+    padding: 30px 10px;
+  }
+  .awardshead .heading {
+    font-size: 30px;
+  }
+  .awardshead .disc {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .awardshead {
+    gap: 15px;
+  }
+  .awardshead .disc {
+    width: 90%;
+  }
+  .text .headingtext p:first-child {
+    font-size: 45px;
   }
 }
