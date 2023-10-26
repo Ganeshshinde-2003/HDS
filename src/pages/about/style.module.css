@@ -184,10 +184,10 @@
   flex-direction: column;
   padding: 60px;
   gap: 40px;
+  color: white;
 }
 .awardshead .heading {
   font-size: 80px;
-  color: black;
   font-weight: bold;
 }
 .awardshead .disc {
@@ -195,6 +195,9 @@
   text-align: left;
   font-size: 30px;
   width: 50%;
+}
+.awardsimage a:hover {
+  transform: scale(1);
 }
 @keyframes marquee {
   0% {
@@ -315,34 +318,34 @@
   justify-content: center;
   gap: 100px;
 }
+.awards div {
+  width: 50%;
+}
 .awards .awardsimage {
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.awards .awardslink {
-  flex: 1;
-}
-.awards .awardslink a {
-  color: #2b2322;
-  font-size: 40px;
-  font-weight: 900;
-}
-.awards .awardslink a:hover {
-  scale: 1;
-}
-.awardlink {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.awards .awardslink .awardarrow {
-  transform: rotate(-45deg);
-}
 .awards .awardsimage img {
   width: 600px;
   height: auto;
+}
+.awardsection {
+  background-color: white;
+  margin-top: 40px;
+}
+.changeColors {
+  animation: fadeInBackgrounds 1s ease forwards;
+}
+
+@keyframes fadeInBackgrounds {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #1a1919;
+  }
 }
 @media (max-width: 600px) {
   .awards {
@@ -356,12 +359,6 @@
   .awards .awardsimage img {
     width: 100%;
     height: auto;
-  }
-  .awards .awardslink a {
-    font-size: 20px;
-  }
-  .awardlink {
-    gap: 0;
   }
   .awardshead {
     padding: 30px 10px;

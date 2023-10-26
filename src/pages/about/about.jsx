@@ -13,12 +13,36 @@ import award1 from "../../assets/images/Screenshot 2023-10-25 at 5.37 1.png";
 import award2 from "../../assets/images/Screenshot 2023-10-25 at 5.43 1.png";
 import mainImage from "../../assets/aboutus/3.png";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
+  }, []);
+
+  useEffect(() => {
+    const secpart = document.querySelector(`.${styles.awardsection}`);
+
+    const handelColor = () => {
+      if (secpart) {
+        const scrollPosition = window.scrollY;
+        const triggerPositionSec = secpart.offsetTop - window.innerHeight / 2;
+        if (scrollPosition > triggerPositionSec) {
+          secpart.classList.add(styles.changeColors);
+        } else {
+          secpart.classList.remove(styles.changeColors);
+        }
+      }
+    };
+
+    if (secpart) {
+      window.addEventListener("scroll", handelColor);
+    }
+
+    return () => {
+      if (secpart) {
+        window.removeEventListener("scroll", handelColor);
+      }
+    };
   }, []);
 
   return (
@@ -66,48 +90,34 @@ function About() {
         <section data-aos="fade-up" className={styles.images}>
           <img src={img1} alt="bakerstreet" />
         </section>
-        <section data-aos="fade-up" className={styles.awardshead}>
-          <p className={styles.heading}>Not Bragging, But…</p>
-          <p className={styles.disc}>
-            Awards might not matter but the feeling you get when you win… that’s
-            everything!
-          </p>
-        </section>
-        <section data-aos="fade-up" className={styles.awards}>
-          <div className={styles.awardsimage}>
-            <img src={award1} alt="bakerstreet" />
-          </div>
-          <div className={styles.awardslink}>
-            <Link
-              className={styles.awardlink}
-              to="https://innovativezoneindia.com/haraay-design-studio/"
-              target="_blank"
-            >
-              View
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className={styles.awardarrow}
-              />
-            </Link>
-          </div>
-        </section>
-        <section data-aos="fade-up" className={styles.awards}>
-          <div className={styles.awardsimage}>
-            <img src={award2} alt="bakerstreet" />
-          </div>
-          <div className={styles.awardslink}>
-            <Link
-              className={styles.awardlink}
-              to="https://www.designrush.com/best-designs"
-              target="_blank"
-            >
-              View
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className={styles.awardarrow}
-              />
-            </Link>
-          </div>
+        <section className={styles.awardsection}>
+          <section data-aos="fade-up" className={styles.awardshead}>
+            <p className={styles.heading}>Not Bragging, But…</p>
+            <p className={styles.disc}>
+              Awards might not matter but the feeling you get when you win…
+              that’s everything!
+            </p>
+          </section>
+          <section data-aos="fade-up" className={styles.awards}>
+            <div className={styles.awardsimage}>
+              <Link
+                className={styles.awardlink}
+                to="https://innovativezoneindia.com/haraay-design-studio/"
+                target="_blank"
+              >
+                <img src={award1} alt="bakerstreet" />
+              </Link>
+            </div>
+            <div className={styles.awardsimage}>
+              <Link
+                className={styles.awardlink}
+                to="https://www.designrush.com/best-designs"
+                target="_blank"
+              >
+                <img src={award2} alt="bakerstreet" />
+              </Link>
+            </div>
+          </section>
         </section>
         <div data-aos="fade-up" className={styles.marquee}>
           <div className={styles.marqueediv}>
