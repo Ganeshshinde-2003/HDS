@@ -363,6 +363,9 @@
   .awardshead {
     padding: 30px 10px;
   }
+  .awardsection {
+    padding: 50px 0;
+  }
   .awardshead .heading {
     font-size: 30px;
   }
