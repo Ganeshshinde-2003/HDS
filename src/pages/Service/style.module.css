@@ -109,6 +109,17 @@
     background-color: #fff;
   }
 }
+.newPartColor {
+  animation: newpartchangeColor 1s ease forwards;
+}
+@keyframes newpartchangeColor {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #2b2322;
+  }
+}
 .secpart {
   background-color: #2b2322;
   height: 100vh;
@@ -137,7 +148,10 @@
   display: flex;
   justify-content: space-between;
 }
-
+.buttonspart2 {
+  width: 50%;
+  justify-content: space-between;
+}
 .buttonRow {
   display: flex;
   flex-direction: column;
@@ -163,7 +177,9 @@
 .forthpart {
   background-color: #e2f5ff;
 }
-
+.newPart {
+  background-color: white;
+}
 .stickyparent {
   height: 200vh;
   background-color: #fff;

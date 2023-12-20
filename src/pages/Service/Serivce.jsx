@@ -14,6 +14,7 @@ function Serivce() {
     const thirdpart = document.querySelector(`.${styles.thirdpart}`);
     const forthpart = document.querySelector(`.${styles.forthpart}`);
     const lastpart = document.querySelector(`.${styles.lastpart}`);
+    const newpart = document.querySelector(`.${styles.newPart}`);
     const sticky = document.querySelector(`.${styles.stickyparent}`);
 
     const handleScroll = () => {
@@ -23,6 +24,7 @@ function Serivce() {
       const triggerPositionFourth =
         forthpart.offsetTop - window.innerHeight / 2;
       const triggerPositionLast = lastpart.offsetTop - window.innerHeight / 2;
+      const triggerPositionNew = newpart.offsetTop - window.innerHeight / 2;
       const stickyPart = sticky.offsetTop - window.innerHeight / 2;
 
       if (scrollPosition > triggerPositionSec) {
@@ -50,6 +52,11 @@ function Serivce() {
         lastpart.classList.add(styles.lastPartColor);
       } else {
         lastpart.classList.remove(styles.lastPartColor);
+      }
+      if (scrollPosition > triggerPositionNew) {
+        newpart.classList.add(styles.newPartColor);
+      } else {
+        newpart.classList.remove(styles.newPartColor);
       }
     };
 
@@ -141,6 +148,34 @@ function Serivce() {
               </button>
 
               <button className={styles.button}>Brand launch</button>
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          className={`${styles.secpart} ${styles.newPart}`}
+        >
+          <div className={styles.secfirst}>
+            <div className={styles.head}>3D ANIMATION</div>
+            <div className={styles.text}>
+              3D modelling, visualisations solutions that eliminate the
+              boundaries between reality and imagination services do not only
+              help brands do things differently, but also save on the time and
+              capital invested.
+            </div>
+          </div>
+          <div className={`${styles.buttonspart} ${styles.buttonspart2}`}>
+            <div className={styles.buttonRow}>
+              <button className={styles.button}>3D Rendering</button>
+
+              <button className={styles.button}>3D / VFX</button>
+
+              <button className={styles.button}>Character Design</button>
+            </div>
+            <div className={styles.buttonRow}>
+              <button className={styles.button}>Animation</button>
+
+              <button className={styles.button}>Product 3D Animation</button>
             </div>
           </div>
         </div>

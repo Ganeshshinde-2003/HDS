@@ -328,7 +328,7 @@
   justify-content: flex-end;
 }
 .awards .awardsimage img {
-  width: 600px;
+  width: 400px;
   height: auto;
 }
 .awardsection {
@@ -347,13 +347,21 @@
     background-color: #1a1919;
   }
 }
+@media (max-width: 800px) {
+  .awards .awardsimage img {
+    width: 150px;
+    height: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .awards {
+    flex-direction: column;
     gap: 10px;
     margin: 10px;
   }
   .awards .awardsimage {
-    width: 100%;
+    width: 100% !important;
     justify-content: center;
   }
   .awards .awardsimage img {

@@ -11,6 +11,7 @@ import img5 from "../../assets/aboutus/haraay-02.png";
 import img6 from "../../assets/aboutus/haraay-proof of delivery.png";
 import award1 from "../../assets/images/Screenshot 2023-10-25 at 5.37 1.png";
 import award2 from "../../assets/images/Screenshot 2023-10-25 at 5.43 1.png";
+import award3 from "../../assets/images/award3.png";
 import mainImage from "../../assets/aboutus/3.png";
 import { Link } from "react-router-dom";
 
@@ -106,6 +107,15 @@ function About() {
                 target="_blank"
               >
                 <img src={award1} alt="bakerstreet" />
+              </Link>
+            </div>
+            <div className={styles.awardsimage}>
+              <Link
+                className={styles.awardlink}
+                to="https://techbehemoths.com/company/haraay-design-studio"
+                target="_blank"
+              >
+                <img src={award3} alt="bakerstreet" />
               </Link>
             </div>
             <div className={styles.awardsimage}>
