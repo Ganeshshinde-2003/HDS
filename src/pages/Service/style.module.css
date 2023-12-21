@@ -375,13 +375,18 @@
   }
 }
 .brandContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 50px;
-  padding: 40px 150px;
+  padding: 40px 250px;
+}
+.brandContainer div,
+p {
+  z-index: 100;
 }
 .brandHeading {
   font-size: 60px;
@@ -400,6 +405,18 @@
 .footerHead {
   font-weight: 600;
   font-size: 38px;
+}
+.brandContainer img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+@media (max-width: 1400px) {
+  .brandContainer {
+    padding: 40px 150px;
+  }
 }
 @media (max-width: 1000px) {
   .brandContainer {

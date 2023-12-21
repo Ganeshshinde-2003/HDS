@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
+import img1 from "../../assets/casestudies/RadMedia/Artboard 1@4x-100 (1) 1.png";
+import img2 from "../../assets/casestudies/purus/caed1.png";
 
 const BrandIdentity = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className={styles.brandContainer}>
+      <img
+        src={img1}
+        alt="RADMEDIA"
+        className={styles.brandimg1}
+        style={{ top: `${10 - scrollPosition * 0.05}%`, left: "2%" }}
+      />
+      <img
+        src={img2}
+        alt="PURUS"
+        className={styles.brandimg2}
+        style={{ top: `${50 - scrollPosition * 0.05}%`, right: "2%" }}
+      />
       <p className={styles.brandHeading}>BRAND IDENTITY</p>
       <p className={styles.brandDisc1}>
         In the marketplace, it's important for your brand to be remembered the
