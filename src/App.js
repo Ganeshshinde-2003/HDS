@@ -25,6 +25,10 @@ import Atmabodh from "./pages/CaseStudies/Atmabodh/Atmabodh";
 import Purus from "./pages/CaseStudies/Purus/Purus";
 import "./App.css";
 import Hylete from "./pages/CaseStudies/Hylete/Hylete";
+import BrandIdentity from "./pages/Service/BrandIdentity";
+import ThreeD from "./pages/Service/ThreeD";
+import Stratagy from "./pages/Service/Stratagy";
+import DigitalExp from "./pages/Service/DigitalExp";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Initial loading state
@@ -96,6 +100,16 @@ function App() {
               <Route path="/works" element={<Works />} />
               <Route path="/about" element={<About />} />
               <Route path="/expertise" element={<Serivce />} />
+              <Route
+                path="/expertise/brand-identity"
+                element={<BrandIdentity />}
+              />
+              <Route path="/expertise/three-d" element={<ThreeD />} />
+              <Route path="/expertise/strategy-ideas" element={<Stratagy />} />
+              <Route
+                path="/expertise/digital-experience"
+                element={<DigitalExp />}
+              />
               <Route path="/contactus" element={<ContactUs />} />
               <Route path="/careerdashboard" element={<CareerDashboard />} />
               <Route path="/alljobs" element={<Alljobs />} />

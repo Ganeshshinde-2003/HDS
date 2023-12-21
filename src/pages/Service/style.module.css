@@ -143,6 +143,12 @@
   font-size: 30px;
   font-weight: 400;
 }
+.secfirst a {
+  color: black;
+}
+.newPart a {
+  color: white;
+}
 .buttonspart {
   margin: 10px 80px;
   display: flex;
@@ -179,6 +185,11 @@
 }
 .newPart {
   background-color: white;
+  color: #e2f5ff;
+}
+.newPart button {
+  border: 1px solid #e2f5ff;
+  color: #e2f5ff;
 }
 .stickyparent {
   height: 200vh;
@@ -269,16 +280,26 @@
     font-size: 20px;
   }
   .buttonspart {
-    margin: 10px 40px;
+    margin: 10px 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .buttonspart2 {
+    width: 90%;
+  }
+  .buttonRow {
+    flex-direction: row;
+    gap: 1px;
   }
   .secpart {
-    height: 50vh;
+    height: 70vh;
   }
   .lastpart {
     height: auto;
   }
   .button {
-    font-size: 14px;
+    font-size: 10px;
+    padding: 6px 8px;
   }
   .dynamicP {
     font-size: 220px;
@@ -289,7 +310,7 @@
 }
 @media (max-width: 450px) {
   .dynamicP {
-    font-size: 170px;
+    font-size: 150px;
   }
   .header .headings {
     font-size: 27px;
@@ -312,17 +333,14 @@
   .secfirst {
     margin: 10px 10px;
   }
-  .buttonspart {
+  /* .buttonspart {
     display: none;
-  }
+  } */
   .secfirst .head {
     font-size: 35px;
   }
   .secfirst .text {
     font-size: 14px;
-  }
-  .dynamicP {
-    font-size: 158px;
   }
   .lastpart p {
     font-size: 28px;

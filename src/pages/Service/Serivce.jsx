@@ -127,6 +127,8 @@ function Serivce() {
             <div className={styles.text}>
               Our mission to translate your brand strategy into a striking
               identity and design.
+              <br />
+              <Link to="/expertise/brand-identity">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
@@ -162,13 +164,15 @@ function Serivce() {
               boundaries between reality and imagination services do not only
               help brands do things differently, but also save on the time and
               capital invested.
+              <br />
+              <Link to="/expertise/three-d">view more...</Link>
             </div>
           </div>
           <div className={`${styles.buttonspart} ${styles.buttonspart2}`}>
             <div className={styles.buttonRow}>
               <button className={styles.button}>3D Rendering</button>
 
-              <button className={styles.button}>3D / VFX</button>
+              <button className={styles.button}>3D/VFX</button>
 
               <button className={styles.button}>Character Design</button>
             </div>
@@ -190,6 +194,8 @@ function Serivce() {
               and habits of your users, but it must also serve your business.We
               thus create sites that customers love to use: simple, fluid and
               stylish.
+              <br />
+              <Link to="/expertise/digital-experience">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
@@ -222,6 +228,8 @@ function Serivce() {
               often little time to give you.So to successfully create a strong
               and coherent brand, to convince, unite and shine, you have to lay
               a solid strategic foundation.
+              <br />
+              <Link to="/expertise/strategy-ideas">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
