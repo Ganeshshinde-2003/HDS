@@ -5,17 +5,7 @@ import styles from "./style.module.css";
 import { useNavigate } from "react-router-dom";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelopeOpenText,
-  faEnvelope,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedin,
-  faFacebook,
-  faInstagram,
-  faBehance,
-} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 
 function ContactUs() {
@@ -26,10 +16,12 @@ function ContactUs() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
+  const [companyName, setCompanyName] = useState("");
   const [desc, setDesc] = useState("");
   const [isSuccessAlert, setIsSuccessAlert] = useState(false);
   const [isErrorAlert, setIsErrorAlert] = useState(false);
+  const [jobTitle, setJobTitle] = useState("");
+  const [enquiry, setEnquiry] = useState("");
   const [errormsg, setErrormsg] = useState(
     "Submission failed. Please try again."
   );
@@ -40,8 +32,10 @@ function ContactUs() {
     firstName,
     lastName,
     email,
-    number,
+    companyName,
     description: desc,
+    jobTitle,
+    enquiryType: enquiry,
   };
 
   const submitData = async (e) => {
@@ -50,8 +44,7 @@ function ContactUs() {
     if (
       firstName.trim() === "" ||
       lastName.trim() === "" ||
-      email.trim() === "" ||
-      number.trim() === ""
+      email.trim() === ""
     ) {
       setErrormsg("Please fill in all required fields.");
       setIsErrorAlert(true);
@@ -106,15 +99,14 @@ function ContactUs() {
       <div className={styles.main}>
         <div data-aos="fade-up" className={styles.container}>
           <p className={styles.h1}>IT’S TIME TO CONNECT</p>
-          <p className={styles.lets}>
-            LET'S CHAT ABOUT
+          <p className={styles.lets}>LET'S CHAT ABOUT YOUR GOALS</p>
+          <p className={styles.heading3}>
+            <span>YOU HAVE A PROJECT ? </span>
             <br />
-            <i>YOUR GOALS</i>
-          </p>
-          <p>
-            YOU HAVE A PROJECT ? <br />
-            YOU WANT TO JOIN US <br />
-            LET'S TALK OVER A COFFEE
+            <i>
+              YOU WANT TO JOIN US <br />
+              LET'S TALK OVER A COFFEE
+            </i>
           </p>
         </div>
         <div data-aos="fade-up" className={styles.card}>
@@ -154,12 +146,33 @@ function ContactUs() {
             />
             <input
               type="text"
-              placeholder="Phone"
+              placeholder="Company Name (Optional)"
               name="PhoneNo"
               required
-              value={number}
-              onChange={(e) => setNumber(e.target.value)}
+              value={companyName}
+              onChange={(e) => setCompanyName(e.target.value)}
             />
+            <input
+              type="text"
+              placeholder="Job Title (Optional)"
+              name="jobTitle"
+              required
+              value={jobTitle}
+              onChange={(e) => setJobTitle(e.target.value)}
+            />
+            <select
+              name="enquiryType"
+              required
+              value={enquiry}
+              onChange={(e) => setEnquiry(e.target.value)}
+            >
+              <option value="" disabled hidden>
+                Enquiry Type
+              </option>
+              <option value="BusinessEnquiry">Business Enquiry </option>
+              <option value="WorkWithUs">Work With Us</option>
+              <option value="Other">Other</option>
+            </select>
             <textarea
               rows="7"
               cols="10"
@@ -173,7 +186,7 @@ function ContactUs() {
               Send Message
             </button>
           </form>
-          <div className={styles.addr}>
+          {/* <div className={styles.addr}>
             <p className={styles.head}>Contact info</p>
             <div className={styles.links}>
               <p>
@@ -204,7 +217,7 @@ function ContactUs() {
             <div className={styles.address}>
               <p>Address:</p>
             </div>
-          </div>
+          </div> */}
         </div>
         {isSuccessAlert && (
           <div
