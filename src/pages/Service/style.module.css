@@ -382,7 +382,7 @@
   align-items: center;
   text-align: center;
   gap: 50px;
-  padding: 40px 250px;
+  padding: 40px 200px;
 }
 .brandContainer div,
 p {
@@ -399,6 +399,8 @@ p {
   align-items: center;
 }
 .brandDisc3Head {
+  width: 630px;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
 }
@@ -426,6 +428,11 @@ p {
 @media (max-width: 800px) {
   .brandContainer {
     padding: 40px 40px;
+  }
+}
+@media (max-width: 700px) {
+  .brandContainer img {
+    display: none;
   }
 }
 @media (max-width: 500px) {
