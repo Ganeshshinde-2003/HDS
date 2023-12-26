@@ -210,3 +210,23 @@
   color: red;
   background-color: white;
 }
+.contactusinfo {
+  margin: 80px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactusmail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+.pone,
+.ptwo {
+  font-size: 20px;
+}
+.ptwo {
+  font-weight: bold;
+}

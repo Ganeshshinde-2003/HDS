@@ -128,7 +128,7 @@ function Serivce() {
               Our mission to translate your brand strategy into a striking
               identity and design.
               <br />
-              {/* <Link to="/expertise/brand-identity">view more...</Link> */}
+              <Link to="/expertise/brand-identity">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
@@ -165,7 +165,7 @@ function Serivce() {
               help brands do things differently, but also save on the time and
               capital invested.
               <br />
-              {/* <Link to="/expertise/three-d">view more...</Link> */}
+              <Link to="/expertise/three-d">view more...</Link>
             </div>
           </div>
           <div className={`${styles.buttonspart} ${styles.buttonspart2}`}>

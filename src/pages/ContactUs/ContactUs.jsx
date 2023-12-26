@@ -186,38 +186,16 @@ function ContactUs() {
               Send Message
             </button>
           </form>
-          {/* <div className={styles.addr}>
-            <p className={styles.head}>Contact info</p>
-            <div className={styles.links}>
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} className={styles.mail} />
-                {"     "}
-                hello@haraaydesignstudio.com
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faPhone} className={styles.mail} />
-                +91 74983 76495
-              </p>
-              <p>
-                Follow Us On:
-                <a href="https://www.linkedin.com/company/haraaydesignstudio/">
-                  <FontAwesomeIcon className={styles.link} icon={faLinkedin} />
-                </a>
-                <a href="https://www.facebook.com/Hugedesign.in">
-                  <FontAwesomeIcon className={styles.link} icon={faFacebook} />
-                </a>
-                <a href="https://www.instagram.com/haraay_studio/">
-                  <FontAwesomeIcon className={styles.link} icon={faInstagram} />
-                </a>
-                <a href="https://www.behance.net/helloharaaystudio">
-                  <FontAwesomeIcon className={styles.link} icon={faBehance} />
-                </a>
-              </p>
-            </div>
-            <div className={styles.address}>
-              <p>Address:</p>
-            </div>
-          </div> */}
+        </div>
+        <div data-aos="fade-up" className={styles.contactusinfo}>
+          <div className={styles.contactusmail}>
+            <p className={styles.pone}> Send us Mail at </p>
+            <p className={styles.ptwo}>hello@haraaydesignstudio.com</p>
+          </div>
+          <div className={styles.contactusmail}>
+            <p className={styles.pone}> Give us a call </p>
+            <p className={styles.ptwo}> +91 7498376495 </p>
+          </div>
         </div>
         {isSuccessAlert && (
           <div
