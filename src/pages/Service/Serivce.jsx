@@ -195,7 +195,7 @@ function Serivce() {
               thus create sites that customers love to use: simple, fluid and
               stylish.
               <br />
-              {/* <Link to="/expertise/digital-experience">view more...</Link> */}
+              <Link to="/expertise/digital-experience">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>

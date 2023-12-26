@@ -142,6 +142,15 @@
   width: 50%;
   font-size: 30px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secfirst .text a {
+  transition: none;
+}
+.secfirst .text a:hover {
+  transform: none;
 }
 .secfirst a {
   color: black;
@@ -396,24 +405,31 @@ p {
   display: flex;
   width: 100%;
   gap: 10px;
-  align-items: center;
 }
 .brandDisc3Head {
-  width: 630px;
-  text-align: left;
   font-size: 20px;
   font-weight: bold;
+  margin-right: 20px;
+  text-align: left;
 }
 .footerHead {
   font-weight: 600;
   font-size: 38px;
 }
-.brandContainer img {
-  height: 400px;
-  width: 400px;
+.brandContainer img,
+.brandvid {
+  height: 300px;
+  width: 300px;
   object-fit: cover;
   position: absolute;
   z-index: 0;
+}
+.brandDisc3Disc {
+  text-align: left;
+}
+.brancdpoints {
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1400px) {
   .brandContainer {
@@ -433,6 +449,14 @@ p {
 @media (max-width: 700px) {
   .brandContainer img {
     display: none;
+  }
+  .brancdpoints {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .brancdpoints .brandDisc3Head {
+    padding: 0;
   }
 }
 @media (max-width: 500px) {
