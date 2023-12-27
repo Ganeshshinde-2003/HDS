@@ -68,7 +68,7 @@ const ThreeD = () => {
         loop
         playsInline
         className={styles.brandvid}
-        style={{ top: `${70 - scrollPosition * 0.05}%`, left: "20%" }}
+        style={{ top: `${70 - scrollPosition * 0.05}%`, left: "5%" }}
       >
         Your browser does not support the vedio tag.
       </video>
@@ -79,7 +79,7 @@ const ThreeD = () => {
         loop
         playsInline
         className={styles.brandvid}
-        style={{ top: `${90 - scrollPosition * 0.05}%`, right: "20%" }}
+        style={{ top: `${90 - scrollPosition * 0.05}%`, right: "5%" }}
       >
         Your browser does not support the vedio tag.
       </video>

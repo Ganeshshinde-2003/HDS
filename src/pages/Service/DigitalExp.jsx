@@ -67,39 +67,45 @@ const DigitalExp = () => {
         brand identity that includes the following elements:
       </p>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Usability: </p>The website or app
-          should be easy to navigate and use, even for users who are not
-          tech-savvy.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Usability: </span>
+          <p>
+            The website or app should be easy to navigate and use, even for
+            users who are not tech-savvy.
+          </p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Relevance: </p>The content and
-          functionality of the DX should be relevant to the user's needs and
-          interests.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Relevance: </span>
+          <p>
+            The content and functionality of the DX should be relevant to the
+            user's needs and interests.
+          </p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Engagement: </p>The DX should be
-          engaging and keep the user coming back for more
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Personalization: </span>
+          <p>The DX should be personalized to the individual user.</p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Personalization: </p>The DX
-          should be personalized to the individual user.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Emotion: </span>
+          <p>The DX should evoke positive emotions in the user.</p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Emotion: </p>The DX should evoke
-          positive emotions in the user.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Brand story: </span>
+          <p>
+            The narrative that tells your brand's history, mission, and values
+          </p>
+        </div>
       </div>
       <p className={styles.footerHead}>
-        Want to get your done? Let’s talk about it!!
+        Want to get your website done? Let’s talk about it!!
       </p>
     </div>
   );

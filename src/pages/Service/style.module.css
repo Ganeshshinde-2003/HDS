@@ -146,17 +146,29 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.secfirst .text a {
-  transition: none;
-}
-.secfirst .text a:hover {
-  transform: none;
-}
+
 .secfirst a {
   color: black;
 }
+.newPart a,
+.secpart a {
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-end;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 50px;
+}
 .newPart a {
-  color: white;
+  color: wheat;
+  border-color: wheat;
+}
+.arrowdown2 {
+  transform: rotate(240deg);
 }
 .buttonspart {
   margin: 10px 80px;
@@ -194,11 +206,11 @@
 }
 .newPart {
   background-color: white;
-  color: #e2f5ff;
+  color: wheat;
 }
 .newPart button {
-  border: 1px solid #e2f5ff;
-  color: #e2f5ff;
+  border: 1px solid wheat;
+  color: wheat;
 }
 .stickyparent {
   height: 200vh;
@@ -268,7 +280,7 @@
     letter-spacing: -2px;
   }
   .arrowdown {
-    font-size: 70px;
+    font-size: 75px;
   }
   .header .circle {
     width: 100px;
@@ -318,6 +330,12 @@
   }
 }
 @media (max-width: 450px) {
+  .newPart a,
+  .secpart a {
+    padding: 3px 10px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
   .dynamicP {
     font-size: 150px;
   }
@@ -391,7 +409,18 @@
   align-items: center;
   text-align: center;
   gap: 50px;
-  padding: 40px 200px;
+  padding: 100px 200px;
+}
+.brandDisc1,
+.brandDisc2,
+.brancdpoints {
+  font-size: 20px;
+}
+.brancdpoints {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
 }
 .brandContainer div,
 p {
@@ -412,6 +441,15 @@ p {
   margin-right: 20px;
   text-align: left;
 }
+.brancdpoints span {
+  width: 30%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.brancdpoints p {
+  text-align: left;
+  width: 70%;
+}
 .footerHead {
   font-weight: 600;
   font-size: 38px;
@@ -427,41 +465,55 @@ p {
 .brandDisc3Disc {
   text-align: left;
 }
-.brancdpoints {
-  display: flex;
-  align-items: center;
-}
 @media (max-width: 1400px) {
   .brandContainer {
-    padding: 40px 150px;
+    padding: 100px 150px;
   }
 }
 @media (max-width: 1000px) {
+  .brandContainer img,
+  .brandvid {
+    height: 200px;
+    width: 200px;
+  }
   .brandContainer {
-    padding: 40px 90px;
+    padding: 100px 90px;
   }
 }
 @media (max-width: 800px) {
   .brandContainer {
-    padding: 40px 40px;
+    padding: 80px 40px;
   }
 }
 @media (max-width: 700px) {
-  .brandContainer img {
-    display: none;
-  }
   .brancdpoints {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+  }
+  .brandDisc1,
+  .brandDisc2,
+  .brancdpoints {
+    font-size: 15px;
+  }
+  .brancdpoints span {
+    width: 100%;
+  }
+  .brancdpoints p {
+    width: 100%;
   }
   .brancdpoints .brandDisc3Head {
     padding: 0;
   }
 }
 @media (max-width: 500px) {
+  .brandContainer img,
+  .brandvid {
+    height: 100px;
+    width: 100px;
+  }
   .brandContainer {
-    padding: 40px 10px;
+    padding: 70px 10px;
     gap: 20px;
   }
   .brandHeading {

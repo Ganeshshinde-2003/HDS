@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./style.module.css";
-import img1 from "../../assets/casestudies/RadMedia/Artboard 1@4x-100 (1) 1.png";
+import img1 from "../../assets/casestudies/RadMedia/15-1@3x.jpg";
 import img2 from "../../assets/casestudies/purus/caed1.png";
-import img3 from "../../assets/casestudies/Hylete/10-1@3x.jpg";
+import img3 from "../../assets/casestudies/purus/17-1@3x.jpg";
 import img4 from "../../assets/casestudies/CreamForest/4-1@3x.jpg";
 
 const BrandIdentity = () => {
@@ -43,13 +43,13 @@ const BrandIdentity = () => {
         src={img3}
         alt="PURUS"
         className={styles.brandimg2}
-        style={{ top: `${70 - scrollPosition * 0.05}%`, left: "20%" }}
+        style={{ top: `${70 - scrollPosition * 0.05}%`, left: "5%" }}
       />
       <img
         src={img4}
         alt="PURUS"
         className={styles.brandimg2}
-        style={{ top: `${90 - scrollPosition * 0.05}%`, right: "20%" }}
+        style={{ top: `${90 - scrollPosition * 0.05}%`, right: "5%" }}
       />
       <p className={styles.brandHeading}>BRAND IDENTITY</p>
       <p className={styles.brandDisc1}>
@@ -85,31 +85,39 @@ const BrandIdentity = () => {
         brand identity that includes the following elements:
       </p>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Brand name and tagline: </p>A
-          memorable and unique name and tagline that captures . the essence of
-          your brand.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Brand name and tagline: </span>
+          <p>
+            A memorable and unique name and tagline that captures . the essence
+            of your brand.
+          </p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Logo and visual identity: </p>A
-          visually appealing logo and overall design aesthetic that reflects
-          your brand personality and values.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Logo and visual identity:</span>{" "}
+          <p>
+            A visually appealing logo and overall design aesthetic that reflects
+            your brand personality and values.
+          </p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Brand voice and tone: </p>
-          The way you communicate with your audience, using language that is
-          consistent with your brand personality.
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Brand voice and tone: </span>
+          <p>
+            The way you communicate with your audience, using language that is
+            consistent with your brand personality.
+          </p>
+        </div>
       </div>
       <div className={styles.brandDisc3}>
-        <p className={styles.brancdpoints}>
-          <p className={styles.brandDisc3Head}>Brand story: </p>
-          The narrative that tells your brand's history, mission, and values
-        </p>
+        <div className={styles.brancdpoints}>
+          <span>Brand story: </span>
+          <p>
+            The narrative that tells your brand's history, mission, and values
+          </p>
+        </div>
       </div>
       <p className={styles.footerHead}>
         Want to get your brand identity done? Let’s talk about it!!

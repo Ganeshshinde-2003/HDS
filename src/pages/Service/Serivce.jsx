@@ -128,7 +128,6 @@ function Serivce() {
               Our mission to translate your brand strategy into a striking
               identity and design.
               <br />
-              <Link to="/expertise/brand-identity">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
@@ -152,6 +151,10 @@ function Serivce() {
               <button className={styles.button}>Brand launch</button>
             </div>
           </div>
+          <Link to="/expertise/brand-identity">
+            view more
+            <FontAwesomeIcon icon={faArrowDown} className={styles.arrowdown2} />
+          </Link>
         </div>
         <div
           data-aos="fade-up"
@@ -165,7 +168,6 @@ function Serivce() {
               help brands do things differently, but also save on the time and
               capital invested.
               <br />
-              <Link to="/expertise/three-d">view more...</Link>
             </div>
           </div>
           <div className={`${styles.buttonspart} ${styles.buttonspart2}`}>
@@ -182,6 +184,10 @@ function Serivce() {
               <button className={styles.button}>Product 3D Animation</button>
             </div>
           </div>
+          <Link to="/expertise/three-d">
+            view more
+            <FontAwesomeIcon icon={faArrowDown} className={styles.arrowdown2} />
+          </Link>
         </div>
         <div
           data-aos="fade-up"
@@ -195,7 +201,6 @@ function Serivce() {
               thus create sites that customers love to use: simple, fluid and
               stylish.
               <br />
-              <Link to="/expertise/digital-experience">view more...</Link>
             </div>
           </div>
           <div className={styles.buttonspart}>
@@ -215,6 +220,10 @@ function Serivce() {
               <button className={styles.button}>Web Development</button>
             </div>
           </div>
+          <Link to="/expertise/digital-experience">
+            view more
+            <FontAwesomeIcon icon={faArrowDown} className={styles.arrowdown2} />
+          </Link>
         </div>
         <div
           data-aos="fade-up"
