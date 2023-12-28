@@ -448,9 +448,10 @@ p {
 }
 .brancdpoints p {
   text-align: left;
-  width: 70%;
+  width: 50%;
 }
 .footerHead {
+  margin-top: 60px;
   font-weight: 600;
   font-size: 38px;
 }
@@ -509,8 +510,11 @@ p {
 @media (max-width: 500px) {
   .brandContainer img,
   .brandvid {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  .vid1 {
+    width: 130px;
   }
   .brandContainer {
     padding: 70px 10px;
