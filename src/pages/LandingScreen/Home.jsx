@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import AnimatedComponent from "../../components/AnimatedComponent";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -12,8 +12,22 @@ import videoFile from "../../assets/Comp 2.MP4";
 import mainImage from "../../assets/images/homeimage.png";
 
 function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -90,11 +104,23 @@ function Home() {
         <div data-aos="fade-up" className={styles.headings}>
           <img src={mainImage} alt="mainImage" className={styles.mainImage} />
           <h1 className={styles.jj}>
-            <span className={styles.hellospan}>hello</span>
+            <span
+              className={styles.hellospan}
+              style={{ left: `${30 + scrollPosition * 0.05}%` }}
+            >
+              hello
+            </span>
             <br />
-            <span>we are</span>
+            <span style={{ left: `${50 - scrollPosition * 0.05}%` }}>
+              we_are
+            </span>
             <br />
-            <span className={styles.haraayspan}>Haraay!</span>
+            <span
+              className={styles.haraayspan}
+              style={{ left: `${-20 + scrollPosition * 0.05}%` }}
+            >
+              Haraay!
+            </span>
           </h1>
         </div>
         {/* <div data-aos="fade-up" className={styles.videopart}></div> */}
