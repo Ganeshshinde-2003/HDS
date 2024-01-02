@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
-import img1 from "../../assets/casestudies/RadMedia/Artboard 1@4x-100 (1) 1.png";
-import img2 from "../../assets/casestudies/purus/caed1.png";
-import img3 from "../../assets/casestudies/Hylete/10-1@3x.jpg";
-import img4 from "../../assets/casestudies/CreamForest/4-1@3x.jpg";
+// import img1 from "../../assets/casestudies/RadMedia/Artboard 1@4x-100 (1) 1.png";
+// import img2 from "../../assets/casestudies/purus/caed1.png";
+// import img3 from "../../assets/casestudies/Hylete/10-1@3x.jpg";
+// import img4 from "../../assets/casestudies/CreamForest/4-1@3x.jpg";
 import { useNavigate } from "react-router-dom";
 
 const DigitalExp = () => {
