@@ -164,18 +164,20 @@
 }
 @media (max-width: 450px) {
   .headings{
-    height: 100vh;
+    height: 80vh;
+    margin-bottom: 0;
   }
   .jj .haraayspan {
-    top: 84%;
+    top: 68%;
     font-size: 90px;
-    left: 6%;
+    left: 4%;
   }
   .jj .hellospan {
-    top: 40%;
+    top: 30%;
     left: 2%;
   }
   .jj span:nth-child(3) {
+    top: 60%;
     left: 14%;
   }
 }
