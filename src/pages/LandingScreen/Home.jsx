@@ -3,6 +3,7 @@ import AnimatedComponent from "../../components/AnimatedComponent";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useSpring, animated } from 'react-spring';
 import { Link } from "react-router-dom";
 import Serene from "../../assets/casestudies/SereneSkin/bottel 15 1.png";
 import Radmedia from "../../assets/casestudies/RadMedia/Duct_Tape_Mockup_ everywhere 1.png";
@@ -15,6 +16,20 @@ function Home() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+  const [props, set] = useSpring(() => ({position:"absolute", opacity: 0, transform: 'translateY(50px)' }));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.pageYOffset;
+      set({ opacity: 1, transform: `translateY(${50 - offset / 4}px)` });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [set]);
 
   useEffect(() => {
     const texts = ["Recent", "work"];
@@ -90,15 +105,15 @@ function Home() {
         <div data-aos="fade-up" className={styles.headings}>
           <img src={mainImage} alt="mainImage" className={styles.mainImage} />
           <h1 className={styles.jj}>
-            <span className={styles.hellospan}>hello</span>
+            <animated.span style={props} className={styles.hellospan}>hello</animated.span>
             <br />
-            <span>we are</span>
+            <animated.span style={props}>we are</animated.span>
             <br />
-            <span className={styles.haraayspan}>Haraay!</span>
+            <animated.span className={styles.haraayspan} style={props}>Haraay!</animated.span>
           </h1>
         </div>
         {/* <div data-aos="fade-up" className={styles.videopart}></div> */}
-        <div data-aos="fade-up" className={styles.text}>
+        <div data-aos="fade-up" className={styles.text} >
           <p>
             We bring <br />
             life to your
