@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import img1 from "../../assets/aboutus/kelly-sikkema-o2TRWThve_I-unsplash 1.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet"
 import img2 from "../../assets/aboutus/haraay-understanding you.png";
 import img3 from "../../assets/aboutus/haraay-market analysis.png";
 import img4 from "../../assets/aboutus/haraay-01.png";
@@ -48,6 +49,9 @@ function About() {
 
   return (
     <AnimatedComponent>
+      <Helmet>
+        <title>Inside Haraay Studio</title>
+      </Helmet>
       <div className={styles.container}>
         <section data-aos="fade-up" className={styles.text}>
           <div className={styles.headingtext}>

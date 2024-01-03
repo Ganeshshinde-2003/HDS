@@ -7,6 +7,7 @@ import AnimatedComponent from "../../components/AnimatedComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet"
 
 function ContactUs() {
   useEffect(() => {
@@ -96,6 +97,9 @@ function ContactUs() {
 
   return (
     <AnimatedComponent>
+       <Helmet>
+        <title>Get In Touch</title>
+      </Helmet>
       <div className={styles.main}>
         <div data-aos="fade-up" className={styles.container}>
           <p className={styles.h1}>IT’S TIME TO CONNECT</p>

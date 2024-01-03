@@ -3,6 +3,7 @@ import AnimatedComponent from "../../components/AnimatedComponent";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet"
 import { useSpring, animated } from 'react-spring';
 import { Link } from "react-router-dom";
 import Serene from "../../assets/casestudies/SereneSkin/bottel 15 1.png";
@@ -101,6 +102,9 @@ function Home() {
 
   return (
     <AnimatedComponent>
+      <Helmet>
+        <title>Haraay Studio</title>
+      </Helmet>
       <main className={styles.main}>
         <div data-aos="fade-up" className={styles.headings}>
           <img src={mainImage} alt="mainImage" className={styles.mainImage} />

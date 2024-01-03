@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import React from "react";
+import { Helmet } from "react-helmet"
 
 function Serivce() {
   useEffect(() => {
@@ -107,6 +108,9 @@ function Serivce() {
 
   return (
     <AnimatedComponent>
+      <Helmet>
+        <title>We Bring Life To Your Idea</title>
+      </Helmet>
       <main>
         <div className={styles.header}>
           <p className={styles.headings}>

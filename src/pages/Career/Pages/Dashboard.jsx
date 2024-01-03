@@ -3,10 +3,14 @@ import React from "react";
 import AnimatedComponent from "../../../components/AnimatedComponent";
 import Career from "../../../assets/Nacemos con  creatividad  ó nos volvemos creativos en el proceso_.jpg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"
 
 function CareerDashboard() {
   return (
     <AnimatedComponent>
+       <Helmet>
+        <title>Want To Join Us</title>
+      </Helmet>
       <main className={styles.main}>
         <div className={styles.container}>
           <div className={styles.content}>
