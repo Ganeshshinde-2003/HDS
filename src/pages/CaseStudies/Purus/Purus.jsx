@@ -20,6 +20,8 @@ import si5 from "../../../assets/casestudies/purus/17 1.png";
 import si6 from "../../../assets/casestudies/purus/puru 2 (1) 1.png";
 import videoFile from "../../../assets/Comp 2.MP4";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function Purus() {
   return (
@@ -28,7 +30,9 @@ function Purus() {
         <div className={styles.mainpart}>
           <div className={styles.headings}>
             <p>Puru’s Enterprise</p>
-            <p>Inspiring for Innovation</p>
+            <p>{`Inspiring for Innovation \u00A0`}
+            <a href="https://www.purusenterprises.in/" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon icon={faLink} style={{color:"black"}} /></a></p>
           </div>
           <div className={styles.imgcontainer}>
             <video src={videoFile} autoPlay controls loop playsInline>
